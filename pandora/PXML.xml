@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PXML xmlns="http://openpandora.org/namespaces/PXML">
+  <package id="spacetrader.marqwatkin">
+    <author name="Marq Watkin" website="http://www.pmprog.co.uk"/>
+    <version major="1" minor="0" release="0" build="0"/>
+    <titles>
+      <title lang="en_US">Space Trader</title>
+    </titles>
+    <descriptions>
+      <description lang="en_US">A 2D "turn based" space trading game.
+
+Originally for the PalmOS (by Peter Spronk), and ported to C# (by Jay French)
+The UI has been modified a bit to look and work better on the Pandora</description>
+    </descriptions>
+    <icon src="./appicon.png"/>
+  </package>
+  <application id="spacetrader.marqwatkin">
+    <exec command="./launch.sh"/>
+    <author name="Jay French" website="http://spacetraderwin.sourceforge.net/"/>
+    <version major="1" minor="0" release="0" build="0"/>
+    <titles>
+      <title lang="en_US">Space Trader</title>
+    </titles>
+    <descriptions>
+      <description lang="en_US">A 2D "turn based" space trading game.
+
+Originally for the PalmOS (by Peter Spronk), and ported to C# (by Jay French)
+The UI has been modified a bit to look and work better on the Pandora</description>
+    </descriptions>
+    <!--Extra block for compatibility with OS versions before HF6-->
+    <title lang="en_US">Space Trader</title>
+    <description lang="en_US">A 2D "turn based" space trading game.
+
+Originally for the PalmOS (by Peter Spronk), and ported to C# (by Jay French)
+The UI has been modified a bit to look and work better on the Pandora</description>
+    <!--END Extra block-->
+    <icon src="./appicon.png"/>
+    <licenses>
+      <license name="GNU GPL v2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" sourcecodeurl="https://github.com/pmprog/SpaceTrader"/>
+    </licenses>
+    <icon src="./appicon.png"/>
+    <previewpics>
+      <pic src="./screen1.jpg"/>
+    </previewpics>
+    <categories>
+      <category name="Game">
+        <subcategory name="Simulation"/>
+      </category>
+    </categories>
+  </application>
+  <!--Created with the PXMLCreator of PNDTools v.0.7.1-->
+</PXML>
