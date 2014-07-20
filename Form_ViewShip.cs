@@ -80,6 +80,7 @@ namespace Fryz.Apps.SpaceTrader
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormViewShip));
 			this.lblTypeLabel = new System.Windows.Forms.Label();
 			this.lblType = new System.Windows.Forms.Label();
 			this.btnClose = new System.Windows.Forms.Button();
@@ -93,10 +94,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblTypeLabel
 			// 
 			this.lblTypeLabel.AutoSize = true;
-			this.lblTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTypeLabel.Location = new System.Drawing.Point(8, 8);
 			this.lblTypeLabel.Name = "lblTypeLabel";
-			this.lblTypeLabel.Size = new System.Drawing.Size(34, 13);
+			this.lblTypeLabel.Size = new System.Drawing.Size(39, 13);
 			this.lblTypeLabel.TabIndex = 2;
 			this.lblTypeLabel.Text = "Type:";
 			// 
@@ -120,7 +121,7 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblEquipLabel
 			// 
-			this.lblEquipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblEquipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblEquipLabel.Location = new System.Drawing.Point(8, 34);
 			this.lblEquipLabel.Name = "lblEquipLabel";
 			this.lblEquipLabel.Size = new System.Drawing.Size(64, 176);
@@ -133,14 +134,11 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblEquip.Name = "lblEquip";
 			this.lblEquip.Size = new System.Drawing.Size(120, 176);
 			this.lblEquip.TabIndex = 44;
-			this.lblEquip.Text = "Hardened\r\n\r\n1 Military Laser\r\n1 Morgan\'s Laser\r\n1 Energy Shield\r\n1 Reflective Shi" +
-				"eld\r\n1 Lightning Shield\r\nNavigating System\r\nAuto-Repair System\r\n10 Extra Cargo Bays\r\nAn Escape Pod\r\n" +
-				"\r\n1 weapon slot\r\n1 gadget slot";
+			this.lblEquip.Text = resources.GetString("lblEquip.Text");
 			// 
 			// boxSpecialCargo
 			// 
-			this.boxSpecialCargo.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																									this.lblSpecialCargo});
+			this.boxSpecialCargo.Controls.Add(this.lblSpecialCargo);
 			this.boxSpecialCargo.Location = new System.Drawing.Point(192, 8);
 			this.boxSpecialCargo.Name = "boxSpecialCargo";
 			this.boxSpecialCargo.Size = new System.Drawing.Size(200, 204);
@@ -160,14 +158,13 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(402, 219);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.boxSpecialCargo,
-																																	this.lblEquip,
-																																	this.lblEquipLabel,
-																																	this.btnClose,
-																																	this.lblTypeLabel,
-																																	this.lblType});
+			this.ClientSize = new System.Drawing.Size(402, 225);
+			this.Controls.Add(this.boxSpecialCargo);
+			this.Controls.Add(this.lblEquip);
+			this.Controls.Add(this.lblEquipLabel);
+			this.Controls.Add(this.btnClose);
+			this.Controls.Add(this.lblTypeLabel);
+			this.Controls.Add(this.lblType);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -177,6 +174,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.Text = "Current Ship";
 			this.boxSpecialCargo.ResumeLayout(false);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 		#endregion

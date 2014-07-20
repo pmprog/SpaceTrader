@@ -139,19 +139,19 @@ namespace Fryz.Apps.SpaceTrader
 			// numAmount
 			// 
 			this.numAmount.Location = new System.Drawing.Point(168, 48);
-			this.numAmount.Minimum = new System.Decimal(new int[] {
-																															1,
-																															0,
-																															0,
-																															0});
+			this.numAmount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numAmount.Name = "numAmount";
 			this.numAmount.Size = new System.Drawing.Size(38, 20);
 			this.numAmount.TabIndex = 1;
-			this.numAmount.Value = new System.Decimal(new int[] {
-																														88,
-																														0,
-																														0,
-																														0});
+			this.numAmount.Value = new decimal(new int[] {
+            88,
+            0,
+            0,
+            0});
 			// 
 			// btnOk
 			// 
@@ -205,7 +205,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.AcceptButton = this.btnOk;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnNone;
-			this.ClientSize = new System.Drawing.Size(302, 105);
+			this.ClientSize = new System.Drawing.Size(302, 119);
 			this.ControlBox = false;
 			this.Controls.Add(this.lblProfit);
 			this.Controls.Add(this.lblPaid);

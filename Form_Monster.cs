@@ -146,9 +146,12 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblShipyards = new System.Windows.Forms.Label();
 			this.lblShipyardSystems = new System.Windows.Forms.LinkLabel();
 			this.picLine2 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.picLine1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picLine0)).BeginInit();
 			this.pnlMercs.SuspendLayout();
 			this.pnlQuests.SuspendLayout();
 			this.pnlShipyards.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picLine2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnClose
@@ -182,30 +185,30 @@ namespace Fryz.Apps.SpaceTrader
 			// lblQuestsLabel
 			// 
 			this.lblQuestsLabel.AutoSize = true;
-			this.lblQuestsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblQuestsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblQuestsLabel.Location = new System.Drawing.Point(88, 4);
 			this.lblQuestsLabel.Name = "lblQuestsLabel";
-			this.lblQuestsLabel.Size = new System.Drawing.Size(50, 19);
+			this.lblQuestsLabel.Size = new System.Drawing.Size(59, 17);
 			this.lblQuestsLabel.TabIndex = 134;
 			this.lblQuestsLabel.Text = "Quests";
 			// 
 			// lblMercLabel
 			// 
 			this.lblMercLabel.AutoSize = true;
-			this.lblMercLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercLabel.Location = new System.Drawing.Point(348, 4);
 			this.lblMercLabel.Name = "lblMercLabel";
-			this.lblMercLabel.Size = new System.Drawing.Size(84, 19);
+			this.lblMercLabel.Size = new System.Drawing.Size(97, 17);
 			this.lblMercLabel.TabIndex = 141;
 			this.lblMercLabel.Text = "Mercenaries";
 			// 
 			// lblMercSkillLabelPilot
 			// 
 			this.lblMercSkillLabelPilot.AutoSize = true;
-			this.lblMercSkillLabelPilot.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercSkillLabelPilot.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercSkillLabelPilot.Location = new System.Drawing.Point(341, 24);
 			this.lblMercSkillLabelPilot.Name = "lblMercSkillLabelPilot";
-			this.lblMercSkillLabelPilot.Size = new System.Drawing.Size(12, 16);
+			this.lblMercSkillLabelPilot.Size = new System.Drawing.Size(15, 13);
 			this.lblMercSkillLabelPilot.TabIndex = 7;
 			this.lblMercSkillLabelPilot.TabStop = true;
 			this.lblMercSkillLabelPilot.Text = "P";
@@ -215,10 +218,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercSkillLabelFighter
 			// 
 			this.lblMercSkillLabelFighter.AutoSize = true;
-			this.lblMercSkillLabelFighter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercSkillLabelFighter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercSkillLabelFighter.Location = new System.Drawing.Point(362, 24);
 			this.lblMercSkillLabelFighter.Name = "lblMercSkillLabelFighter";
-			this.lblMercSkillLabelFighter.Size = new System.Drawing.Size(11, 16);
+			this.lblMercSkillLabelFighter.Size = new System.Drawing.Size(14, 13);
 			this.lblMercSkillLabelFighter.TabIndex = 8;
 			this.lblMercSkillLabelFighter.TabStop = true;
 			this.lblMercSkillLabelFighter.Text = "F";
@@ -228,10 +231,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercSkillLabelTrader
 			// 
 			this.lblMercSkillLabelTrader.AutoSize = true;
-			this.lblMercSkillLabelTrader.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercSkillLabelTrader.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercSkillLabelTrader.Location = new System.Drawing.Point(382, 24);
 			this.lblMercSkillLabelTrader.Name = "lblMercSkillLabelTrader";
-			this.lblMercSkillLabelTrader.Size = new System.Drawing.Size(11, 16);
+			this.lblMercSkillLabelTrader.Size = new System.Drawing.Size(15, 13);
 			this.lblMercSkillLabelTrader.TabIndex = 9;
 			this.lblMercSkillLabelTrader.TabStop = true;
 			this.lblMercSkillLabelTrader.Text = "T";
@@ -241,10 +244,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercSkillLabelEngineer
 			// 
 			this.lblMercSkillLabelEngineer.AutoSize = true;
-			this.lblMercSkillLabelEngineer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercSkillLabelEngineer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercSkillLabelEngineer.Location = new System.Drawing.Point(401, 24);
 			this.lblMercSkillLabelEngineer.Name = "lblMercSkillLabelEngineer";
-			this.lblMercSkillLabelEngineer.Size = new System.Drawing.Size(12, 16);
+			this.lblMercSkillLabelEngineer.Size = new System.Drawing.Size(15, 13);
 			this.lblMercSkillLabelEngineer.TabIndex = 10;
 			this.lblMercSkillLabelEngineer.TabStop = true;
 			this.lblMercSkillLabelEngineer.Text = "E";
@@ -254,10 +257,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercSystemLabel
 			// 
 			this.lblMercSystemLabel.AutoSize = true;
-			this.lblMercSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercSystemLabel.Location = new System.Drawing.Point(425, 24);
 			this.lblMercSystemLabel.Name = "lblMercSystemLabel";
-			this.lblMercSystemLabel.Size = new System.Drawing.Size(43, 16);
+			this.lblMercSystemLabel.Size = new System.Drawing.Size(47, 13);
 			this.lblMercSystemLabel.TabIndex = 11;
 			this.lblMercSystemLabel.TabStop = true;
 			this.lblMercSystemLabel.Text = "System";
@@ -266,10 +269,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblQuestSystemLabel
 			// 
 			this.lblQuestSystemLabel.AutoSize = true;
-			this.lblQuestSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblQuestSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblQuestSystemLabel.Location = new System.Drawing.Point(13, 24);
 			this.lblQuestSystemLabel.Name = "lblQuestSystemLabel";
-			this.lblQuestSystemLabel.Size = new System.Drawing.Size(43, 16);
+			this.lblQuestSystemLabel.Size = new System.Drawing.Size(47, 13);
 			this.lblQuestSystemLabel.TabIndex = 1;
 			this.lblQuestSystemLabel.TabStop = true;
 			this.lblQuestSystemLabel.Text = "System";
@@ -278,10 +281,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblQuestDescLabel
 			// 
 			this.lblQuestDescLabel.AutoSize = true;
-			this.lblQuestDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblQuestDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblQuestDescLabel.Location = new System.Drawing.Point(85, 24);
 			this.lblQuestDescLabel.Name = "lblQuestDescLabel";
-			this.lblQuestDescLabel.Size = new System.Drawing.Size(63, 16);
+			this.lblQuestDescLabel.Size = new System.Drawing.Size(71, 13);
 			this.lblQuestDescLabel.TabIndex = 2;
 			this.lblQuestDescLabel.TabStop = true;
 			this.lblQuestDescLabel.Text = "Description";
@@ -290,10 +293,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercIDLabel
 			// 
 			this.lblMercIDLabel.AutoSize = true;
-			this.lblMercIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercIDLabel.Location = new System.Drawing.Point(247, 24);
 			this.lblMercIDLabel.Name = "lblMercIDLabel";
-			this.lblMercIDLabel.Size = new System.Drawing.Size(16, 16);
+			this.lblMercIDLabel.Size = new System.Drawing.Size(20, 13);
 			this.lblMercIDLabel.TabIndex = 5;
 			this.lblMercIDLabel.TabStop = true;
 			this.lblMercIDLabel.Text = "ID";
@@ -303,10 +306,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblMercNameLabel
 			// 
 			this.lblMercNameLabel.AutoSize = true;
-			this.lblMercNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercNameLabel.Location = new System.Drawing.Point(268, 24);
 			this.lblMercNameLabel.Name = "lblMercNameLabel";
-			this.lblMercNameLabel.Size = new System.Drawing.Size(35, 16);
+			this.lblMercNameLabel.Size = new System.Drawing.Size(39, 13);
 			this.lblMercNameLabel.TabIndex = 6;
 			this.lblMercNameLabel.TabStop = true;
 			this.lblMercNameLabel.Text = "Name";
@@ -315,10 +318,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblShipyardsDescLabel
 			// 
 			this.lblShipyardsDescLabel.AutoSize = true;
-			this.lblShipyardsDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblShipyardsDescLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblShipyardsDescLabel.Location = new System.Drawing.Point(85, 258);
 			this.lblShipyardsDescLabel.Name = "lblShipyardsDescLabel";
-			this.lblShipyardsDescLabel.Size = new System.Drawing.Size(63, 16);
+			this.lblShipyardsDescLabel.Size = new System.Drawing.Size(71, 13);
 			this.lblShipyardsDescLabel.TabIndex = 4;
 			this.lblShipyardsDescLabel.TabStop = true;
 			this.lblShipyardsDescLabel.Text = "Description";
@@ -327,10 +330,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblShipyardsSystemLabel
 			// 
 			this.lblShipyardsSystemLabel.AutoSize = true;
-			this.lblShipyardsSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblShipyardsSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblShipyardsSystemLabel.Location = new System.Drawing.Point(13, 258);
 			this.lblShipyardsSystemLabel.Name = "lblShipyardsSystemLabel";
-			this.lblShipyardsSystemLabel.Size = new System.Drawing.Size(43, 16);
+			this.lblShipyardsSystemLabel.Size = new System.Drawing.Size(47, 13);
 			this.lblShipyardsSystemLabel.TabIndex = 3;
 			this.lblShipyardsSystemLabel.TabStop = true;
 			this.lblShipyardsSystemLabel.Text = "System";
@@ -339,10 +342,10 @@ namespace Fryz.Apps.SpaceTrader
 			// lblShipyardsLabel
 			// 
 			this.lblShipyardsLabel.AutoSize = true;
-			this.lblShipyardsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblShipyardsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblShipyardsLabel.Location = new System.Drawing.Point(79, 238);
 			this.lblShipyardsLabel.Name = "lblShipyardsLabel";
-			this.lblShipyardsLabel.Size = new System.Drawing.Size(68, 19);
+			this.lblShipyardsLabel.Size = new System.Drawing.Size(80, 17);
 			this.lblShipyardsLabel.TabIndex = 155;
 			this.lblShipyardsLabel.Text = "Shipyards";
 			// 
@@ -397,7 +400,6 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblMercSystems
 			// 
-			this.lblMercSystems.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
 			this.lblMercSystems.Location = new System.Drawing.Point(185, 4);
 			this.lblMercSystems.Name = "lblMercSystems";
 			this.lblMercSystems.Size = new System.Drawing.Size(160, 387);
@@ -448,7 +450,6 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblQuestSystems
 			// 
-			this.lblQuestSystems.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
 			this.lblQuestSystems.Location = new System.Drawing.Point(4, 4);
 			this.lblQuestSystems.Name = "lblQuestSystems";
 			this.lblQuestSystems.Size = new System.Drawing.Size(68, 350);
@@ -474,7 +475,6 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblShipyardSystems
 			// 
-			this.lblShipyardSystems.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
 			this.lblShipyardSystems.Location = new System.Drawing.Point(4, 4);
 			this.lblShipyardSystems.Name = "lblShipyardSystems";
 			this.lblShipyardSystems.Size = new System.Drawing.Size(68, 63);
@@ -494,7 +494,7 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(617, 358);
+			this.ClientSize = new System.Drawing.Size(617, 373);
 			this.Controls.Add(this.picLine2);
 			this.Controls.Add(this.pnlShipyards);
 			this.Controls.Add(this.pnlQuests);
@@ -523,10 +523,14 @@ namespace Fryz.Apps.SpaceTrader
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Monster.com Job Listing";
+			((System.ComponentModel.ISupportInitialize)(this.picLine1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picLine0)).EndInit();
 			this.pnlMercs.ResumeLayout(false);
 			this.pnlQuests.ResumeLayout(false);
 			this.pnlShipyards.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.picLine2)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 		#endregion

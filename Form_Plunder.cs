@@ -502,7 +502,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.AcceptButton = this.btnDone;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnDone;
-			this.ClientSize = new System.Drawing.Size(230, 283);
+			this.ClientSize = new System.Drawing.Size(230, 304);
 			this.Controls.Add(this.btnJettison);
 			this.Controls.Add(this.btnDone);
 			this.Controls.Add(this.lblBays);

@@ -95,10 +95,11 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblMercLabel = new System.Windows.Forms.Label();
 			this.lblInsLabel = new System.Windows.Forms.Label();
 			this.picLine = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.picLine)).BeginInit();
 			this.SuspendLayout();
-			//
+			// 
 			// btnClose
-			//
+			// 
 			this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnClose.Location = new System.Drawing.Point(-32, -32);
 			this.btnClose.Name = "btnClose";
@@ -106,129 +107,128 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnClose.TabIndex = 32;
 			this.btnClose.TabStop = false;
 			this.btnClose.Text = "X";
-			//
+			// 
 			// lblMerc
-			//
+			// 
 			this.lblMerc.Location = new System.Drawing.Point(104, 8);
 			this.lblMerc.Name = "lblMerc";
 			this.lblMerc.Size = new System.Drawing.Size(39, 13);
 			this.lblMerc.TabIndex = 36;
 			this.lblMerc.Text = "888 cr.";
 			this.lblMerc.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblIns
-			//
+			// 
 			this.lblIns.Location = new System.Drawing.Point(104, 24);
 			this.lblIns.Name = "lblIns";
 			this.lblIns.Size = new System.Drawing.Size(39, 13);
 			this.lblIns.TabIndex = 40;
 			this.lblIns.Text = "888 cr.";
 			this.lblIns.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblInt
-			//
+			// 
 			this.lblInt.Location = new System.Drawing.Point(104, 40);
 			this.lblInt.Name = "lblInt";
 			this.lblInt.Size = new System.Drawing.Size(39, 13);
 			this.lblInt.TabIndex = 44;
 			this.lblInt.Text = "888 cr.";
 			this.lblInt.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblTax
-			//
+			// 
 			this.lblTax.Location = new System.Drawing.Point(104, 56);
 			this.lblTax.Name = "lblTax";
 			this.lblTax.Size = new System.Drawing.Size(39, 13);
 			this.lblTax.TabIndex = 48;
 			this.lblTax.Text = "888 cr.";
 			this.lblTax.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblTotal
-			//
+			// 
 			this.lblTotal.Location = new System.Drawing.Point(104, 79);
 			this.lblTotal.Name = "lblTotal";
 			this.lblTotal.Size = new System.Drawing.Size(39, 13);
 			this.lblTotal.TabIndex = 52;
 			this.lblTotal.Text = "888 cr.";
 			this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblTotalLabel
-			//
+			// 
 			this.lblTotalLabel.AutoSize = true;
-			this.lblTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTotalLabel.Location = new System.Drawing.Point(8, 79);
 			this.lblTotalLabel.Name = "lblTotalLabel";
-			this.lblTotalLabel.Size = new System.Drawing.Size(34, 13);
+			this.lblTotalLabel.Size = new System.Drawing.Size(40, 13);
 			this.lblTotalLabel.TabIndex = 7;
 			this.lblTotalLabel.Text = "Total:";
-			//
+			// 
 			// lblTaxLabel
-			//
+			// 
 			this.lblTaxLabel.AutoSize = true;
-			this.lblTaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblTaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTaxLabel.Location = new System.Drawing.Point(8, 56);
 			this.lblTaxLabel.Name = "lblTaxLabel";
-			this.lblTaxLabel.Size = new System.Drawing.Size(84, 13);
+			this.lblTaxLabel.Size = new System.Drawing.Size(92, 13);
 			this.lblTaxLabel.TabIndex = 6;
 			this.lblTaxLabel.Text = "Wormhole Tax:";
-			//
+			// 
 			// lblIntLabel
-			//
+			// 
 			this.lblIntLabel.AutoSize = true;
-			this.lblIntLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblIntLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblIntLabel.Location = new System.Drawing.Point(8, 40);
 			this.lblIntLabel.Name = "lblIntLabel";
-			this.lblIntLabel.Size = new System.Drawing.Size(47, 13);
+			this.lblIntLabel.Size = new System.Drawing.Size(54, 13);
 			this.lblIntLabel.TabIndex = 5;
 			this.lblIntLabel.Text = "Interest:";
-			//
+			// 
 			// lblMercLabel
-			//
+			// 
 			this.lblMercLabel.AutoSize = true;
-			this.lblMercLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblMercLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblMercLabel.Location = new System.Drawing.Point(8, 8);
 			this.lblMercLabel.Name = "lblMercLabel";
-			this.lblMercLabel.Size = new System.Drawing.Size(72, 13);
+			this.lblMercLabel.Size = new System.Drawing.Size(80, 13);
 			this.lblMercLabel.TabIndex = 4;
 			this.lblMercLabel.Text = "Mercenaries:";
-			//
+			// 
 			// lblInsLabel
-			//
+			// 
 			this.lblInsLabel.AutoSize = true;
-			this.lblInsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblInsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblInsLabel.Location = new System.Drawing.Point(8, 24);
 			this.lblInsLabel.Name = "lblInsLabel";
-			this.lblInsLabel.Size = new System.Drawing.Size(59, 13);
+			this.lblInsLabel.Size = new System.Drawing.Size(67, 13);
 			this.lblInsLabel.TabIndex = 3;
 			this.lblInsLabel.Text = "Insurance:";
-			//
+			// 
 			// picLine
-			//
+			// 
 			this.picLine.BackColor = System.Drawing.Color.DimGray;
 			this.picLine.Location = new System.Drawing.Point(6, 73);
 			this.picLine.Name = "picLine";
 			this.picLine.Size = new System.Drawing.Size(138, 1);
 			this.picLine.TabIndex = 134;
 			this.picLine.TabStop = false;
-			//
+			// 
 			// FormCosts
-			//
+			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(148, 99);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.picLine,
-																																	this.lblTotal,
-																																	this.lblTax,
-																																	this.lblInt,
-																																	this.lblIns,
-																																	this.lblMerc,
-																																	this.btnClose,
-																																	this.lblInsLabel,
-																																	this.lblTotalLabel,
-																																	this.lblTaxLabel,
-																																	this.lblIntLabel,
-																																	this.lblMercLabel});
+			this.ClientSize = new System.Drawing.Size(148, 110);
+			this.Controls.Add(this.picLine);
+			this.Controls.Add(this.lblTotal);
+			this.Controls.Add(this.lblTax);
+			this.Controls.Add(this.lblInt);
+			this.Controls.Add(this.lblIns);
+			this.Controls.Add(this.lblMerc);
+			this.Controls.Add(this.btnClose);
+			this.Controls.Add(this.lblInsLabel);
+			this.Controls.Add(this.lblTotalLabel);
+			this.Controls.Add(this.lblTaxLabel);
+			this.Controls.Add(this.lblIntLabel);
+			this.Controls.Add(this.lblMercLabel);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -236,7 +236,10 @@ namespace Fryz.Apps.SpaceTrader
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Cost Specification";
+			((System.ComponentModel.ISupportInitialize)(this.picLine)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 		#endregion
 

@@ -107,9 +107,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblStatus1 = new System.Windows.Forms.Label();
 			this.lblStatus2 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			//
+			// 
 			// btnClose
-			//
+			// 
 			this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnClose.Location = new System.Drawing.Point(-32, -32);
 			this.btnClose.Name = "btnClose";
@@ -117,39 +117,39 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnClose.TabIndex = 32;
 			this.btnClose.TabStop = false;
 			this.btnClose.Text = "X";
-			//
+			// 
 			// lblRank0
-			//
+			// 
 			this.lblRank0.AutoSize = true;
 			this.lblRank0.Location = new System.Drawing.Point(8, 8);
 			this.lblRank0.Name = "lblRank0";
-			this.lblRank0.Size = new System.Drawing.Size(14, 13);
+			this.lblRank0.Size = new System.Drawing.Size(16, 13);
 			this.lblRank0.TabIndex = 33;
 			this.lblRank0.Text = "1.";
 			this.lblRank0.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblRank2
-			//
+			// 
 			this.lblRank2.AutoSize = true;
 			this.lblRank2.Location = new System.Drawing.Point(8, 136);
 			this.lblRank2.Name = "lblRank2";
-			this.lblRank2.Size = new System.Drawing.Size(14, 13);
+			this.lblRank2.Size = new System.Drawing.Size(16, 13);
 			this.lblRank2.TabIndex = 34;
 			this.lblRank2.Text = "3.";
 			this.lblRank2.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblRank1
-			//
+			// 
 			this.lblRank1.AutoSize = true;
 			this.lblRank1.Location = new System.Drawing.Point(8, 72);
 			this.lblRank1.Name = "lblRank1";
-			this.lblRank1.Size = new System.Drawing.Size(14, 13);
+			this.lblRank1.Size = new System.Drawing.Size(16, 13);
 			this.lblRank1.TabIndex = 35;
 			this.lblRank1.Text = "2.";
 			this.lblRank1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			//
+			// 
 			// lblScore0
-			//
+			// 
 			this.lblScore0.Location = new System.Drawing.Point(168, 8);
 			this.lblScore0.Name = "lblScore0";
 			this.lblScore0.Size = new System.Drawing.Size(43, 13);
@@ -157,9 +157,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblScore0.Text = "888.8%";
 			this.lblScore0.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			this.lblScore0.Visible = false;
-			//
+			// 
 			// lblScore1
-			//
+			// 
 			this.lblScore1.Location = new System.Drawing.Point(168, 72);
 			this.lblScore1.Name = "lblScore1";
 			this.lblScore1.Size = new System.Drawing.Size(43, 13);
@@ -167,9 +167,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblScore1.Text = "888.8%";
 			this.lblScore1.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			this.lblScore1.Visible = false;
-			//
+			// 
 			// lblScore2
-			//
+			// 
 			this.lblScore2.Location = new System.Drawing.Point(168, 136);
 			this.lblScore2.Name = "lblScore2";
 			this.lblScore2.Size = new System.Drawing.Size(43, 13);
@@ -177,77 +177,76 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblScore2.Text = "888.8%";
 			this.lblScore2.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			this.lblScore2.Visible = false;
-			//
+			// 
 			// lblName0
-			//
+			// 
 			this.lblName0.Location = new System.Drawing.Point(24, 8);
 			this.lblName0.Name = "lblName0";
 			this.lblName0.Size = new System.Drawing.Size(144, 13);
 			this.lblName0.TabIndex = 39;
 			this.lblName0.Text = "Empty";
-			//
+			// 
 			// lblName1
-			//
+			// 
 			this.lblName1.Location = new System.Drawing.Point(24, 72);
 			this.lblName1.Name = "lblName1";
 			this.lblName1.Size = new System.Drawing.Size(144, 13);
 			this.lblName1.TabIndex = 40;
 			this.lblName1.Text = "Empty";
-			//
+			// 
 			// lblName2
-			//
+			// 
 			this.lblName2.Location = new System.Drawing.Point(24, 136);
 			this.lblName2.Name = "lblName2";
 			this.lblName2.Size = new System.Drawing.Size(144, 13);
 			this.lblName2.TabIndex = 41;
 			this.lblName2.Text = "Empty";
-			//
+			// 
 			// lblStatus0
-			//
+			// 
 			this.lblStatus0.Location = new System.Drawing.Point(24, 24);
 			this.lblStatus0.Name = "lblStatus0";
 			this.lblStatus0.Size = new System.Drawing.Size(200, 26);
 			this.lblStatus0.TabIndex = 42;
 			this.lblStatus0.Text = "Claimed moon in 888,888 days, worth 8,888,888 credits on impossible level.";
 			this.lblStatus0.Visible = false;
-			//
+			// 
 			// lblStatus1
-			//
+			// 
 			this.lblStatus1.Location = new System.Drawing.Point(24, 88);
 			this.lblStatus1.Name = "lblStatus1";
 			this.lblStatus1.Size = new System.Drawing.Size(200, 26);
 			this.lblStatus1.TabIndex = 43;
 			this.lblStatus1.Text = "Claimed moon in 888,888 days, worth 8,888,888 credits on impossible level.";
 			this.lblStatus1.Visible = false;
-			//
+			// 
 			// lblStatus2
-			//
+			// 
 			this.lblStatus2.Location = new System.Drawing.Point(24, 152);
 			this.lblStatus2.Name = "lblStatus2";
 			this.lblStatus2.Size = new System.Drawing.Size(200, 26);
 			this.lblStatus2.TabIndex = 44;
 			this.lblStatus2.Text = "Claimed moon in 888,888 days, worth 8,888,888 credits on impossible level.";
 			this.lblStatus2.Visible = false;
-			//
+			// 
 			// FormViewHighScores
-			//
+			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(218, 191);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.lblStatus2,
-																																	this.lblStatus1,
-																																	this.lblStatus0,
-																																	this.lblName2,
-																																	this.lblName1,
-																																	this.lblName0,
-																																	this.lblScore2,
-																																	this.lblScore1,
-																																	this.lblScore0,
-																																	this.lblRank1,
-																																	this.lblRank2,
-																																	this.lblRank0,
-																																	this.btnClose});
+			this.ClientSize = new System.Drawing.Size(218, 207);
+			this.Controls.Add(this.lblStatus2);
+			this.Controls.Add(this.lblStatus1);
+			this.Controls.Add(this.lblStatus0);
+			this.Controls.Add(this.lblName2);
+			this.Controls.Add(this.lblName1);
+			this.Controls.Add(this.lblName0);
+			this.Controls.Add(this.lblScore2);
+			this.Controls.Add(this.lblScore1);
+			this.Controls.Add(this.lblScore0);
+			this.Controls.Add(this.lblRank1);
+			this.Controls.Add(this.lblRank2);
+			this.Controls.Add(this.lblRank0);
+			this.Controls.Add(this.btnClose);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -256,6 +255,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "High Scores";
 			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 		#endregion
 

@@ -148,7 +148,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.AcceptButton = this.btnOk;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnNothing;
-			this.ClientSize = new System.Drawing.Size(286, 63);
+			this.ClientSize = new System.Drawing.Size(286, 79);
 			this.ControlBox = false;
 			this.Controls.Add(this.btnNothing);
 			this.Controls.Add(this.btnMax);

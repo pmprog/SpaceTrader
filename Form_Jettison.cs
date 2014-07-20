@@ -167,9 +167,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblBays = new System.Windows.Forms.Label();
 			this.btnDone = new System.Windows.Forms.Button();
 			this.SuspendLayout();
-			//
+			// 
 			// btnJettisonAll9
-			//
+			// 
 			this.btnJettisonAll9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll9.Location = new System.Drawing.Point(100, 220);
 			this.btnJettisonAll9.Name = "btnJettisonAll9";
@@ -177,9 +177,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll9.TabIndex = 141;
 			this.btnJettisonAll9.Text = "All";
 			this.btnJettisonAll9.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty9
-			//
+			// 
 			this.btnJettisonQty9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty9.Location = new System.Drawing.Point(68, 220);
 			this.btnJettisonQty9.Name = "btnJettisonQty9";
@@ -187,9 +187,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty9.TabIndex = 140;
 			this.btnJettisonQty9.Text = "88";
 			this.btnJettisonQty9.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll8
-			//
+			// 
 			this.btnJettisonAll8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll8.Location = new System.Drawing.Point(100, 196);
 			this.btnJettisonAll8.Name = "btnJettisonAll8";
@@ -197,9 +197,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll8.TabIndex = 139;
 			this.btnJettisonAll8.Text = "All";
 			this.btnJettisonAll8.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty8
-			//
+			// 
 			this.btnJettisonQty8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty8.Location = new System.Drawing.Point(68, 196);
 			this.btnJettisonQty8.Name = "btnJettisonQty8";
@@ -207,9 +207,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty8.TabIndex = 138;
 			this.btnJettisonQty8.Text = "88";
 			this.btnJettisonQty8.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll7
-			//
+			// 
 			this.btnJettisonAll7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll7.Location = new System.Drawing.Point(100, 172);
 			this.btnJettisonAll7.Name = "btnJettisonAll7";
@@ -217,9 +217,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll7.TabIndex = 137;
 			this.btnJettisonAll7.Text = "All";
 			this.btnJettisonAll7.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty7
-			//
+			// 
 			this.btnJettisonQty7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty7.Location = new System.Drawing.Point(68, 172);
 			this.btnJettisonQty7.Name = "btnJettisonQty7";
@@ -227,9 +227,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty7.TabIndex = 136;
 			this.btnJettisonQty7.Text = "88";
 			this.btnJettisonQty7.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll6
-			//
+			// 
 			this.btnJettisonAll6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll6.Location = new System.Drawing.Point(100, 148);
 			this.btnJettisonAll6.Name = "btnJettisonAll6";
@@ -237,9 +237,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll6.TabIndex = 135;
 			this.btnJettisonAll6.Text = "All";
 			this.btnJettisonAll6.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty6
-			//
+			// 
 			this.btnJettisonQty6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty6.Location = new System.Drawing.Point(68, 148);
 			this.btnJettisonQty6.Name = "btnJettisonQty6";
@@ -247,9 +247,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty6.TabIndex = 134;
 			this.btnJettisonQty6.Text = "88";
 			this.btnJettisonQty6.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll5
-			//
+			// 
 			this.btnJettisonAll5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll5.Location = new System.Drawing.Point(100, 124);
 			this.btnJettisonAll5.Name = "btnJettisonAll5";
@@ -257,9 +257,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll5.TabIndex = 133;
 			this.btnJettisonAll5.Text = "All";
 			this.btnJettisonAll5.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty5
-			//
+			// 
 			this.btnJettisonQty5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty5.Location = new System.Drawing.Point(68, 124);
 			this.btnJettisonQty5.Name = "btnJettisonQty5";
@@ -267,9 +267,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty5.TabIndex = 132;
 			this.btnJettisonQty5.Text = "88";
 			this.btnJettisonQty5.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll4
-			//
+			// 
 			this.btnJettisonAll4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll4.Location = new System.Drawing.Point(100, 100);
 			this.btnJettisonAll4.Name = "btnJettisonAll4";
@@ -277,9 +277,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll4.TabIndex = 131;
 			this.btnJettisonAll4.Text = "All";
 			this.btnJettisonAll4.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty4
-			//
+			// 
 			this.btnJettisonQty4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty4.Location = new System.Drawing.Point(68, 100);
 			this.btnJettisonQty4.Name = "btnJettisonQty4";
@@ -287,9 +287,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty4.TabIndex = 130;
 			this.btnJettisonQty4.Text = "88";
 			this.btnJettisonQty4.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll3
-			//
+			// 
 			this.btnJettisonAll3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll3.Location = new System.Drawing.Point(100, 76);
 			this.btnJettisonAll3.Name = "btnJettisonAll3";
@@ -297,9 +297,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll3.TabIndex = 129;
 			this.btnJettisonAll3.Text = "All";
 			this.btnJettisonAll3.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty3
-			//
+			// 
 			this.btnJettisonQty3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty3.Location = new System.Drawing.Point(68, 76);
 			this.btnJettisonQty3.Name = "btnJettisonQty3";
@@ -307,9 +307,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty3.TabIndex = 128;
 			this.btnJettisonQty3.Text = "88";
 			this.btnJettisonQty3.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll2
-			//
+			// 
 			this.btnJettisonAll2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll2.Location = new System.Drawing.Point(100, 52);
 			this.btnJettisonAll2.Name = "btnJettisonAll2";
@@ -317,9 +317,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll2.TabIndex = 127;
 			this.btnJettisonAll2.Text = "All";
 			this.btnJettisonAll2.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty2
-			//
+			// 
 			this.btnJettisonQty2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty2.Location = new System.Drawing.Point(68, 52);
 			this.btnJettisonQty2.Name = "btnJettisonQty2";
@@ -327,9 +327,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty2.TabIndex = 126;
 			this.btnJettisonQty2.Text = "88";
 			this.btnJettisonQty2.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll1
-			//
+			// 
 			this.btnJettisonAll1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll1.Location = new System.Drawing.Point(100, 28);
 			this.btnJettisonAll1.Name = "btnJettisonAll1";
@@ -337,9 +337,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll1.TabIndex = 125;
 			this.btnJettisonAll1.Text = "All";
 			this.btnJettisonAll1.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty1
-			//
+			// 
 			this.btnJettisonQty1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty1.Location = new System.Drawing.Point(68, 28);
 			this.btnJettisonQty1.Name = "btnJettisonQty1";
@@ -347,9 +347,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty1.TabIndex = 124;
 			this.btnJettisonQty1.Text = "88";
 			this.btnJettisonQty1.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonAll0
-			//
+			// 
 			this.btnJettisonAll0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonAll0.Location = new System.Drawing.Point(100, 4);
 			this.btnJettisonAll0.Name = "btnJettisonAll0";
@@ -357,9 +357,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonAll0.TabIndex = 123;
 			this.btnJettisonAll0.Text = "All";
 			this.btnJettisonAll0.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// btnJettisonQty0
-			//
+			// 
 			this.btnJettisonQty0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnJettisonQty0.Location = new System.Drawing.Point(68, 4);
 			this.btnJettisonQty0.Name = "btnJettisonQty0";
@@ -367,116 +367,116 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnJettisonQty0.TabIndex = 122;
 			this.btnJettisonQty0.Text = "88";
 			this.btnJettisonQty0.Click += new System.EventHandler(this.btnJettison_Click);
-			//
+			// 
 			// lblTradeCmdty9
-			//
+			// 
 			this.lblTradeCmdty9.AutoSize = true;
 			this.lblTradeCmdty9.Location = new System.Drawing.Point(8, 224);
 			this.lblTradeCmdty9.Name = "lblTradeCmdty9";
-			this.lblTradeCmdty9.Size = new System.Drawing.Size(40, 13);
+			this.lblTradeCmdty9.Size = new System.Drawing.Size(41, 13);
 			this.lblTradeCmdty9.TabIndex = 151;
 			this.lblTradeCmdty9.Text = "Robots";
-			//
+			// 
 			// lblTradeCmdty8
-			//
+			// 
 			this.lblTradeCmdty8.AutoSize = true;
 			this.lblTradeCmdty8.Location = new System.Drawing.Point(8, 200);
 			this.lblTradeCmdty8.Name = "lblTradeCmdty8";
-			this.lblTradeCmdty8.Size = new System.Drawing.Size(51, 13);
+			this.lblTradeCmdty8.Size = new System.Drawing.Size(52, 13);
 			this.lblTradeCmdty8.TabIndex = 150;
 			this.lblTradeCmdty8.Text = "Narcotics";
-			//
+			// 
 			// lblTradeCmdty2
-			//
+			// 
 			this.lblTradeCmdty2.AutoSize = true;
 			this.lblTradeCmdty2.Location = new System.Drawing.Point(8, 56);
 			this.lblTradeCmdty2.Name = "lblTradeCmdty2";
-			this.lblTradeCmdty2.Size = new System.Drawing.Size(30, 13);
+			this.lblTradeCmdty2.Size = new System.Drawing.Size(31, 13);
 			this.lblTradeCmdty2.TabIndex = 149;
 			this.lblTradeCmdty2.Text = "Food";
-			//
+			// 
 			// lblTradeCmdty0
-			//
+			// 
 			this.lblTradeCmdty0.AutoSize = true;
 			this.lblTradeCmdty0.Location = new System.Drawing.Point(8, 8);
 			this.lblTradeCmdty0.Name = "lblTradeCmdty0";
-			this.lblTradeCmdty0.Size = new System.Drawing.Size(34, 13);
+			this.lblTradeCmdty0.Size = new System.Drawing.Size(36, 13);
 			this.lblTradeCmdty0.TabIndex = 148;
 			this.lblTradeCmdty0.Text = "Water";
-			//
+			// 
 			// lblTradeCmdty1
-			//
+			// 
 			this.lblTradeCmdty1.AutoSize = true;
 			this.lblTradeCmdty1.Location = new System.Drawing.Point(8, 32);
 			this.lblTradeCmdty1.Name = "lblTradeCmdty1";
 			this.lblTradeCmdty1.Size = new System.Drawing.Size(27, 13);
 			this.lblTradeCmdty1.TabIndex = 147;
 			this.lblTradeCmdty1.Text = "Furs";
-			//
+			// 
 			// lblTradeCmdty6
-			//
+			// 
 			this.lblTradeCmdty6.AutoSize = true;
 			this.lblTradeCmdty6.Location = new System.Drawing.Point(8, 152);
 			this.lblTradeCmdty6.Name = "lblTradeCmdty6";
 			this.lblTradeCmdty6.Size = new System.Drawing.Size(50, 13);
 			this.lblTradeCmdty6.TabIndex = 146;
 			this.lblTradeCmdty6.Text = "Medicine";
-			//
+			// 
 			// lblTradeCmdty5
-			//
+			// 
 			this.lblTradeCmdty5.AutoSize = true;
 			this.lblTradeCmdty5.Location = new System.Drawing.Point(8, 128);
 			this.lblTradeCmdty5.Name = "lblTradeCmdty5";
-			this.lblTradeCmdty5.Size = new System.Drawing.Size(49, 13);
+			this.lblTradeCmdty5.Size = new System.Drawing.Size(46, 13);
 			this.lblTradeCmdty5.TabIndex = 145;
 			this.lblTradeCmdty5.Text = "Firearms";
-			//
+			// 
 			// lblTradeCmdty4
-			//
+			// 
 			this.lblTradeCmdty4.AutoSize = true;
 			this.lblTradeCmdty4.Location = new System.Drawing.Point(8, 104);
 			this.lblTradeCmdty4.Name = "lblTradeCmdty4";
-			this.lblTradeCmdty4.Size = new System.Drawing.Size(41, 13);
+			this.lblTradeCmdty4.Size = new System.Drawing.Size(40, 13);
 			this.lblTradeCmdty4.TabIndex = 144;
 			this.lblTradeCmdty4.Text = "Games";
-			//
+			// 
 			// lblTradeCmdty3
-			//
+			// 
 			this.lblTradeCmdty3.AutoSize = true;
 			this.lblTradeCmdty3.Location = new System.Drawing.Point(8, 80);
 			this.lblTradeCmdty3.Name = "lblTradeCmdty3";
-			this.lblTradeCmdty3.Size = new System.Drawing.Size(23, 13);
+			this.lblTradeCmdty3.Size = new System.Drawing.Size(24, 13);
 			this.lblTradeCmdty3.TabIndex = 143;
 			this.lblTradeCmdty3.Text = "Ore";
-			//
+			// 
 			// lblTradeCmdty7
-			//
+			// 
 			this.lblTradeCmdty7.AutoSize = true;
 			this.lblTradeCmdty7.Location = new System.Drawing.Point(8, 176);
 			this.lblTradeCmdty7.Name = "lblTradeCmdty7";
 			this.lblTradeCmdty7.Size = new System.Drawing.Size(53, 13);
 			this.lblTradeCmdty7.TabIndex = 142;
 			this.lblTradeCmdty7.Text = "Machines";
-			//
+			// 
 			// lblBaysLabel
-			//
+			// 
 			this.lblBaysLabel.AutoSize = true;
 			this.lblBaysLabel.Location = new System.Drawing.Point(144, 8);
 			this.lblBaysLabel.Name = "lblBaysLabel";
 			this.lblBaysLabel.Size = new System.Drawing.Size(33, 13);
 			this.lblBaysLabel.TabIndex = 152;
 			this.lblBaysLabel.Text = "Bays:";
-			//
+			// 
 			// lblBays
-			//
+			// 
 			this.lblBays.Location = new System.Drawing.Point(176, 8);
 			this.lblBays.Name = "lblBays";
 			this.lblBays.Size = new System.Drawing.Size(33, 13);
 			this.lblBays.TabIndex = 153;
 			this.lblBays.Text = "88/88";
-			//
+			// 
 			// btnDone
-			//
+			// 
 			this.btnDone.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnDone.Location = new System.Drawing.Point(87, 252);
@@ -484,47 +484,46 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnDone.Size = new System.Drawing.Size(44, 22);
 			this.btnDone.TabIndex = 154;
 			this.btnDone.Text = "Done";
-			//
+			// 
 			// FormJettison
-			//
+			// 
 			this.AcceptButton = this.btnDone;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnDone;
-			this.ClientSize = new System.Drawing.Size(218, 283);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.btnDone,
-																																	this.lblBays,
-																																	this.lblBaysLabel,
-																																	this.lblTradeCmdty9,
-																																	this.lblTradeCmdty8,
-																																	this.lblTradeCmdty2,
-																																	this.lblTradeCmdty0,
-																																	this.lblTradeCmdty1,
-																																	this.lblTradeCmdty6,
-																																	this.lblTradeCmdty5,
-																																	this.lblTradeCmdty4,
-																																	this.lblTradeCmdty3,
-																																	this.lblTradeCmdty7,
-																																	this.btnJettisonAll9,
-																																	this.btnJettisonQty9,
-																																	this.btnJettisonAll8,
-																																	this.btnJettisonQty8,
-																																	this.btnJettisonAll7,
-																																	this.btnJettisonQty7,
-																																	this.btnJettisonAll6,
-																																	this.btnJettisonQty6,
-																																	this.btnJettisonAll5,
-																																	this.btnJettisonQty5,
-																																	this.btnJettisonAll4,
-																																	this.btnJettisonQty4,
-																																	this.btnJettisonAll3,
-																																	this.btnJettisonQty3,
-																																	this.btnJettisonAll2,
-																																	this.btnJettisonQty2,
-																																	this.btnJettisonAll1,
-																																	this.btnJettisonQty1,
-																																	this.btnJettisonAll0,
-																																	this.btnJettisonQty0});
+			this.ClientSize = new System.Drawing.Size(218, 301);
+			this.Controls.Add(this.btnDone);
+			this.Controls.Add(this.lblBays);
+			this.Controls.Add(this.lblBaysLabel);
+			this.Controls.Add(this.lblTradeCmdty9);
+			this.Controls.Add(this.lblTradeCmdty8);
+			this.Controls.Add(this.lblTradeCmdty2);
+			this.Controls.Add(this.lblTradeCmdty0);
+			this.Controls.Add(this.lblTradeCmdty1);
+			this.Controls.Add(this.lblTradeCmdty6);
+			this.Controls.Add(this.lblTradeCmdty5);
+			this.Controls.Add(this.lblTradeCmdty4);
+			this.Controls.Add(this.lblTradeCmdty3);
+			this.Controls.Add(this.lblTradeCmdty7);
+			this.Controls.Add(this.btnJettisonAll9);
+			this.Controls.Add(this.btnJettisonQty9);
+			this.Controls.Add(this.btnJettisonAll8);
+			this.Controls.Add(this.btnJettisonQty8);
+			this.Controls.Add(this.btnJettisonAll7);
+			this.Controls.Add(this.btnJettisonQty7);
+			this.Controls.Add(this.btnJettisonAll6);
+			this.Controls.Add(this.btnJettisonQty6);
+			this.Controls.Add(this.btnJettisonAll5);
+			this.Controls.Add(this.btnJettisonQty5);
+			this.Controls.Add(this.btnJettisonAll4);
+			this.Controls.Add(this.btnJettisonQty4);
+			this.Controls.Add(this.btnJettisonAll3);
+			this.Controls.Add(this.btnJettisonQty3);
+			this.Controls.Add(this.btnJettisonAll2);
+			this.Controls.Add(this.btnJettisonQty2);
+			this.Controls.Add(this.btnJettisonAll1);
+			this.Controls.Add(this.btnJettisonQty1);
+			this.Controls.Add(this.btnJettisonAll0);
+			this.Controls.Add(this.btnJettisonQty0);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -533,6 +532,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Jettison Cargo";
 			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 		#endregion
 

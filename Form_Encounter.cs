@@ -194,7 +194,7 @@ namespace Fryz.Apps.SpaceTrader
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(FormEncounter));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEncounter));
 			this.lblEncounter = new System.Windows.Forms.Label();
 			this.picShipYou = new System.Windows.Forms.PictureBox();
 			this.picShipOpponent = new System.Windows.Forms.PictureBox();
@@ -262,6 +262,46 @@ namespace Fryz.Apps.SpaceTrader
 			this.picTrib54 = new System.Windows.Forms.PictureBox();
 			this.picTrib55 = new System.Windows.Forms.PictureBox();
 			this.tmrTick = new System.Windows.Forms.Timer(this.components);
+			((System.ComponentModel.ISupportInitialize)(this.picShipYou)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picShipOpponent)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picContinuous)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picEncounterType)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib00)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib50)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib10)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib40)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib20)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib30)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib04)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib03)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib02)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib01)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib05)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib11)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib12)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib13)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib14)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib15)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib21)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib22)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib23)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib24)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib25)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib31)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib32)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib33)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib34)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib35)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib41)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib51)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib42)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib52)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib43)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib53)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib44)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib45)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib54)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib55)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lblEncounter
@@ -301,25 +341,25 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblAction.Size = new System.Drawing.Size(232, 39);
 			this.lblAction.TabIndex = 15;
 			this.lblAction.Text = "\"We know you removed illegal goods from the Marie Celeste. You must give them up " +
-				"at once!\"";
+					"at once!\"";
 			// 
 			// lblOpponentLabel
 			// 
 			this.lblOpponentLabel.AutoSize = true;
-			this.lblOpponentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblOpponentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblOpponentLabel.Location = new System.Drawing.Point(141, 8);
 			this.lblOpponentLabel.Name = "lblOpponentLabel";
-			this.lblOpponentLabel.Size = new System.Drawing.Size(59, 16);
+			this.lblOpponentLabel.Size = new System.Drawing.Size(66, 13);
 			this.lblOpponentLabel.TabIndex = 16;
 			this.lblOpponentLabel.Text = "Opponent:";
 			// 
 			// lblYouLabel
 			// 
 			this.lblYouLabel.AutoSize = true;
-			this.lblYouLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblYouLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblYouLabel.Location = new System.Drawing.Point(45, 8);
 			this.lblYouLabel.Name = "lblYouLabel";
-			this.lblYouLabel.Size = new System.Drawing.Size(28, 16);
+			this.lblYouLabel.Size = new System.Drawing.Size(33, 13);
 			this.lblYouLabel.TabIndex = 17;
 			this.lblYouLabel.Text = "You:";
 			// 
@@ -525,9 +565,10 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// ilContinuous
 			// 
-			this.ilContinuous.ImageSize = new System.Drawing.Size(9, 9);
 			this.ilContinuous.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilContinuous.ImageStream")));
 			this.ilContinuous.TransparentColor = System.Drawing.Color.White;
+			this.ilContinuous.Images.SetKeyName(0, "");
+			this.ilContinuous.Images.SetKeyName(1, "");
 			// 
 			// picEncounterType
 			// 
@@ -539,9 +580,13 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// ilEncounterType
 			// 
-			this.ilEncounterType.ImageSize = new System.Drawing.Size(12, 12);
 			this.ilEncounterType.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilEncounterType.ImageStream")));
 			this.ilEncounterType.TransparentColor = System.Drawing.Color.White;
+			this.ilEncounterType.Images.SetKeyName(0, "");
+			this.ilEncounterType.Images.SetKeyName(1, "");
+			this.ilEncounterType.Images.SetKeyName(2, "");
+			this.ilEncounterType.Images.SetKeyName(3, "");
+			this.ilEncounterType.Images.SetKeyName(4, "");
 			// 
 			// picTrib00
 			// 
@@ -556,9 +601,16 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// ilTribbles
 			// 
-			this.ilTribbles.ImageSize = new System.Drawing.Size(12, 12);
 			this.ilTribbles.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilTribbles.ImageStream")));
 			this.ilTribbles.TransparentColor = System.Drawing.Color.White;
+			this.ilTribbles.Images.SetKeyName(0, "");
+			this.ilTribbles.Images.SetKeyName(1, "");
+			this.ilTribbles.Images.SetKeyName(2, "");
+			this.ilTribbles.Images.SetKeyName(3, "");
+			this.ilTribbles.Images.SetKeyName(4, "");
+			this.ilTribbles.Images.SetKeyName(5, "");
+			this.ilTribbles.Images.SetKeyName(6, "");
+			this.ilTribbles.Images.SetKeyName(7, "");
 			// 
 			// picTrib50
 			// 
@@ -953,7 +1005,7 @@ namespace Fryz.Apps.SpaceTrader
 			// FormEncounter
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(234, 271);
+			this.ClientSize = new System.Drawing.Size(234, 292);
 			this.ControlBox = false;
 			this.Controls.Add(this.picTrib55);
 			this.Controls.Add(this.picTrib54);
@@ -1025,7 +1077,48 @@ namespace Fryz.Apps.SpaceTrader
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Encounter";
+			((System.ComponentModel.ISupportInitialize)(this.picShipYou)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picShipOpponent)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picContinuous)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picEncounterType)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib00)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib50)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib40)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib20)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib30)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib04)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib03)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib02)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib01)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib05)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib11)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib12)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib13)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib14)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib15)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib21)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib22)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib23)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib24)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib25)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib31)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib32)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib33)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib34)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib35)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib41)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib51)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib42)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib52)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib43)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib53)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib44)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib45)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib54)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picTrib55)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 		#endregion

@@ -63,12 +63,13 @@ namespace Fryz.Apps.SpaceTrader
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormViewQuests));
 			this.btnClose = new System.Windows.Forms.Button();
 			this.lblQuests = new System.Windows.Forms.LinkLabel();
 			this.SuspendLayout();
-			//
+			// 
 			// btnClose
-			//
+			// 
 			this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnClose.Location = new System.Drawing.Point(-32, -32);
 			this.btnClose.Name = "btnClose";
@@ -76,47 +77,24 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnClose.TabIndex = 32;
 			this.btnClose.TabStop = false;
 			this.btnClose.Text = "X";
-			//
+			// 
 			// lblQuests
-			//
+			// 
 			this.lblQuests.LinkArea = new System.Windows.Forms.LinkArea(0, 0);
 			this.lblQuests.Location = new System.Drawing.Point(8, 8);
 			this.lblQuests.Name = "lblQuests";
 			this.lblQuests.Size = new System.Drawing.Size(368, 312);
 			this.lblQuests.TabIndex = 44;
-			this.lblQuests.Text = @"Kill the space monster at Acamar.
-
-Get your lightning shield at Zalkon.
-
-Deliver antidote to Japori.
-
-Deliver the alien artifact to Professor Berger at some hi-tech system.
-
-Bring ambassador Jarek to Devidia.  Jarek is wondering why the journey is taking so long, and is no longer of much help in negotiating trades.
-
-Inform Gemulon about alien invasion within 8 days.
-
-Stop Dr. Fehler's experiment at Daled within 8 days.
-
-Deliver the unstable reactor to Nix before it consumes all its fuel.
-
-Find and destroy the Scarab (which is hiding at the exit to a wormhole).
-
-Smuggle Jonathan Wild to Kravat.  Wild is getting impatient, and will no longer aid your crew along the way.
-
-Get rid of those pesky tribbles.
-
-Claim your moon at Utopia.";
+			this.lblQuests.Text = resources.GetString("lblQuests.Text");
 			this.lblQuests.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblQuests_LinkClicked);
-			//
+			// 
 			// FormViewQuests
-			//
+			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(378, 325);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.btnClose,
-																																	this.lblQuests});
+			this.ClientSize = new System.Drawing.Size(378, 343);
+			this.Controls.Add(this.btnClose);
+			this.Controls.Add(this.lblQuests);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -125,6 +103,7 @@ Claim your moon at Utopia.";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Quests";
 			this.ResumeLayout(false);
+
 		}
 		#endregion
 

@@ -2,7 +2,7 @@
 <PXML xmlns="http://openpandora.org/namespaces/PXML">
   <package id="spacetrader.marqwatkin">
     <author name="Marq Watkin" website="http://www.pmprog.co.uk"/>
-    <version major="1" minor="0" release="0" build="0"/>
+    <version major="1" minor="0" release="1" build="0"/>
     <titles>
       <title lang="en_US">Space Trader</title>
     </titles>
@@ -17,7 +17,7 @@ The UI has been modified a bit to look and work better on the Pandora</descripti
   <application id="spacetrader.marqwatkin">
     <exec command="./launch.sh"/>
     <author name="Jay French" website="http://spacetraderwin.sourceforge.net/"/>
-    <version major="1" minor="0" release="0" build="0"/>
+    <version major="1" minor="0" release="1" build="0"/>
     <titles>
       <title lang="en_US">Space Trader</title>
     </titles>

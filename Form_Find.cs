@@ -80,18 +80,18 @@ namespace Fryz.Apps.SpaceTrader
 			this.txtSystem = new System.Windows.Forms.TextBox();
 			this.chkTrack = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
-			//
+			// 
 			// lblText
-			//
+			// 
 			this.lblText.AutoSize = true;
 			this.lblText.Location = new System.Drawing.Point(8, 8);
 			this.lblText.Name = "lblText";
-			this.lblText.Size = new System.Drawing.Size(177, 13);
+			this.lblText.Size = new System.Drawing.Size(169, 13);
 			this.lblText.TabIndex = 3;
 			this.lblText.Text = "Which system are you looking for?";
-			//
+			// 
 			// btnOk
-			//
+			// 
 			this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnOk.Location = new System.Drawing.Point(43, 68);
@@ -99,9 +99,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnOk.Size = new System.Drawing.Size(40, 22);
 			this.btnOk.TabIndex = 3;
 			this.btnOk.Text = "Ok";
-			//
+			// 
 			// btnCancel
-			//
+			// 
 			this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCancel.Location = new System.Drawing.Point(91, 68);
@@ -109,36 +109,34 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnCancel.Size = new System.Drawing.Size(50, 22);
 			this.btnCancel.TabIndex = 4;
 			this.btnCancel.Text = "Cancel";
-			//
+			// 
 			// txtSystem
-			//
+			// 
 			this.txtSystem.Location = new System.Drawing.Point(8, 24);
 			this.txtSystem.Name = "txtSystem";
 			this.txtSystem.Size = new System.Drawing.Size(168, 20);
 			this.txtSystem.TabIndex = 1;
-			this.txtSystem.Text = "";
-			//
+			// 
 			// chkTrack
-			//
+			// 
 			this.chkTrack.Location = new System.Drawing.Point(8, 48);
 			this.chkTrack.Name = "chkTrack";
 			this.chkTrack.Size = new System.Drawing.Size(112, 16);
 			this.chkTrack.TabIndex = 2;
 			this.chkTrack.Text = "Track this system";
-			//
+			// 
 			// FormFind
-			//
+			// 
 			this.AcceptButton = this.btnOk;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnCancel;
-			this.ClientSize = new System.Drawing.Size(184, 97);
+			this.ClientSize = new System.Drawing.Size(184, 113);
 			this.ControlBox = false;
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.chkTrack,
-																																	this.txtSystem,
-																																	this.btnCancel,
-																																	this.btnOk,
-																																	this.lblText});
+			this.Controls.Add(this.chkTrack);
+			this.Controls.Add(this.txtSystem);
+			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnOk);
+			this.Controls.Add(this.lblText);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Name = "FormFind";
 			this.ShowInTaskbar = false;
@@ -146,6 +144,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.Text = "Find System";
 			this.Closed += new System.EventHandler(this.FormFind_Closed);
 			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 		#endregion
 

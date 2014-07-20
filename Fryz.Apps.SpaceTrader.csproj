@@ -1,7 +1,7 @@
 ﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0ED352CE-6DA4-49C4-A458-93630C48F40D}</ProjectGuid>
     <SccProjectName>
@@ -124,7 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.ico" />
-    <Content Include="Space Trader for Windows Documentation.htm" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -142,6 +141,12 @@
     </Compile>
     <Compile Include="Equipment.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorBox.Designer.cs">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_About.cs">
       <SubType>Form</SubType>
@@ -287,7 +292,6 @@
     <Compile Include="Weapon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="changelog.txt" />
     <None Include="images\alien.bmp" />
     <None Include="images\arrdown.bmp" />
     <None Include="images\arrleft.bmp" />
@@ -408,6 +412,9 @@
     <None Include="images\w_pulse.bmp" />
     <None Include="images\w_quantum.bmp" />
     <None Include="Properties\app.manifest" />
+    <EmbeddedResource Include="ErrorBox.resx">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_About.resx">
       <DependentUpon>Form_About.cs</DependentUpon>
     </EmbeddedResource>

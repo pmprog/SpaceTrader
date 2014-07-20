@@ -734,6 +734,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.label11 = new System.Windows.Forms.Label();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.btnTrgBuyMax9 = new System.Windows.Forms.Button();
 			this.btnTrgBuyQty9 = new System.Windows.Forms.Button();
 			this.btnTrgBuyMax8 = new System.Windows.Forms.Button();
@@ -766,8 +768,6 @@ namespace Fryz.Apps.SpaceTrader
 			this.label4 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.label11 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.picGalacticChart)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.picShortRangeChart)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.statusBarPanelCash)).BeginInit();
@@ -790,9 +790,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.tabPage4.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// mnuMain
@@ -3017,6 +3017,24 @@ namespace Fryz.Apps.SpaceTrader
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Market";
 			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(236, 12);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(56, 13);
+			this.label11.TabIndex = 165;
+			this.label11.Text = "Quick Buy";
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.BackColor = System.Drawing.Color.DimGray;
+			this.pictureBox3.Location = new System.Drawing.Point(224, 12);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(1, 262);
+			this.pictureBox3.TabIndex = 164;
+			this.pictureBox3.TabStop = false;
+			// 
 			// btnTrgBuyMax9
 			// 
 			this.btnTrgBuyMax9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -3325,24 +3343,6 @@ namespace Fryz.Apps.SpaceTrader
 			this.label5.TabIndex = 137;
 			this.label5.Text = "Furs";
 			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.BackColor = System.Drawing.Color.DimGray;
-			this.pictureBox3.Location = new System.Drawing.Point(224, 12);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(1, 262);
-			this.pictureBox3.TabIndex = 164;
-			this.pictureBox3.TabStop = false;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(236, 12);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(56, 13);
-			this.label11.TabIndex = 165;
-			this.label11.Text = "Quick Buy";
-			// 
 			// SpaceTrader
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -3351,7 +3351,6 @@ namespace Fryz.Apps.SpaceTrader
 			this.Controls.Add(this.statusBar);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximizeBox = false;
 			this.Menu = this.mnuMain;
 			this.Name = "SpaceTrader";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -3384,9 +3383,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.tabPage2.ResumeLayout(false);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -4198,13 +4197,29 @@ namespace Fryz.Apps.SpaceTrader
 
 		private void btnMerc_Click(object sender, System.EventArgs e)
 		{
-			(new FormViewPersonnel()).ShowDialog(this);
-			UpdateAll();
+			try
+			{
+				(new FormViewPersonnel()).ShowDialog(this);
+				UpdateAll();
+			}
+			catch (Exception ex)
+			{
+				ErrorBox eb = new ErrorBox(ex);
+				eb.ShowDialog(this);
+			}
 		}
 
 		private void btnNews_Click(object sender, System.EventArgs e)
 		{
-			game.ShowNewspaper();
+			try
+			{
+				game.ShowNewspaper();
+			}
+			catch (Exception ex)
+			{
+				ErrorBox eb = new ErrorBox(ex);
+				eb.ShowDialog(this);
+			}
 		}
 
 		private void btnNextSystem_Click(object sender, System.EventArgs e)
@@ -4308,6 +4323,12 @@ namespace Fryz.Apps.SpaceTrader
 			{
 				GameEnd();
 			}
+			catch (Exception ex)
+			{
+				ErrorBox eb = new ErrorBox(ex);
+				eb.ShowDialog(this);
+				return;
+			}
 			UpdateAll();
 		}
 
@@ -4398,7 +4419,7 @@ namespace Fryz.Apps.SpaceTrader
 
 		private void mnuViewCommander_Click(object sender, System.EventArgs e)
 		{
-			(new FormViewCommander()).ShowDialog(this);
+			(new frmViewCommander()).ShowDialog(this);
 		}
 
 		private void mnuViewPersonnel_Click(object sender, System.EventArgs e)

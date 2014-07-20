@@ -167,16 +167,16 @@ namespace Fryz.Apps.SpaceTrader
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form_Shipyard));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Shipyard));
 			this.boxWelcome = new System.Windows.Forms.GroupBox();
 			this.lblSkillDescription = new System.Windows.Forms.Label();
 			this.lblSkill = new System.Windows.Forms.Label();
 			this.lblSizeSpecialty = new System.Windows.Forms.Label();
 			this.lblSkillLabel = new System.Windows.Forms.Label();
 			this.lblSizeSpecialtyLabel = new System.Windows.Forms.Label();
-			this.lblWelcome = new System.Windows.Forms.Label();
 			this.lblWarning = new System.Windows.Forms.Label();
 			this.picLogo = new System.Windows.Forms.PictureBox();
+			this.lblWelcome = new System.Windows.Forms.Label();
 			this.boxInfo = new System.Windows.Forms.GroupBox();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnLoad = new System.Windows.Forms.Button();
@@ -232,8 +232,12 @@ namespace Fryz.Apps.SpaceTrader
 			this.dlgSave = new System.Windows.Forms.SaveFileDialog();
 			this.lblDisabledName = new System.Windows.Forms.Label();
 			this.boxWelcome.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
 			this.boxInfo.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picInfoLine)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picShip)).BeginInit();
 			this.boxCosts.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picCostsLine)).BeginInit();
 			this.boxAllocation.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numHullStrength)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numCargoBays)).BeginInit();
@@ -246,15 +250,14 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// boxWelcome
 			// 
-			this.boxWelcome.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																						 this.lblSkillDescription,
-																																						 this.lblSkill,
-																																						 this.lblSizeSpecialty,
-																																						 this.lblSkillLabel,
-																																						 this.lblSizeSpecialtyLabel,
-																																						 this.lblWarning,
-																																						 this.picLogo,
-																																						 this.lblWelcome});
+			this.boxWelcome.Controls.Add(this.lblSkillDescription);
+			this.boxWelcome.Controls.Add(this.lblSkill);
+			this.boxWelcome.Controls.Add(this.lblSizeSpecialty);
+			this.boxWelcome.Controls.Add(this.lblSkillLabel);
+			this.boxWelcome.Controls.Add(this.lblSizeSpecialtyLabel);
+			this.boxWelcome.Controls.Add(this.lblWarning);
+			this.boxWelcome.Controls.Add(this.picLogo);
+			this.boxWelcome.Controls.Add(this.lblWelcome);
 			this.boxWelcome.Location = new System.Drawing.Point(8, 0);
 			this.boxWelcome.Name = "boxWelcome";
 			this.boxWelcome.Size = new System.Drawing.Size(270, 204);
@@ -288,31 +291,22 @@ namespace Fryz.Apps.SpaceTrader
 			// lblSkillLabel
 			// 
 			this.lblSkillLabel.AutoSize = true;
-			this.lblSkillLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblSkillLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblSkillLabel.Location = new System.Drawing.Point(92, 79);
 			this.lblSkillLabel.Name = "lblSkillLabel";
-			this.lblSkillLabel.Size = new System.Drawing.Size(72, 13);
+			this.lblSkillLabel.Size = new System.Drawing.Size(81, 13);
 			this.lblSkillLabel.TabIndex = 24;
 			this.lblSkillLabel.Text = "Special Skill:";
 			// 
 			// lblSizeSpecialtyLabel
 			// 
 			this.lblSizeSpecialtyLabel.AutoSize = true;
-			this.lblSizeSpecialtyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblSizeSpecialtyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblSizeSpecialtyLabel.Location = new System.Drawing.Point(92, 65);
 			this.lblSizeSpecialtyLabel.Name = "lblSizeSpecialtyLabel";
-			this.lblSizeSpecialtyLabel.Size = new System.Drawing.Size(82, 13);
+			this.lblSizeSpecialtyLabel.Size = new System.Drawing.Size(91, 13);
 			this.lblSizeSpecialtyLabel.TabIndex = 23;
 			this.lblSizeSpecialtyLabel.Text = "Size Specialty:";
-			// 
-			// lblWelcome
-			// 
-			this.lblWelcome.Location = new System.Drawing.Point(92, 12);
-			this.lblWelcome.Name = "lblWelcome";
-			this.lblWelcome.Size = new System.Drawing.Size(176, 52);
-			this.lblWelcome.TabIndex = 3;
-			this.lblWelcome.Text = "Welcome to Sorosuub Engineering Shipyards! Our best engineer, Obi-Wan, is at your" +
-				" service.";
 			// 
 			// lblWarning
 			// 
@@ -320,9 +314,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblWarning.Name = "lblWarning";
 			this.lblWarning.Size = new System.Drawing.Size(258, 65);
 			this.lblWarning.TabIndex = 5;
-			this.lblWarning.Text = "Bear in mind that getting too close to the maximum number of units will result in" +
-				" a \"Crowding Penalty\" due to the engineering difficulty of squeezing everything " +
-				"in.  There is a modest penalty at 80%, and a more severe one at 90%.";
+			this.lblWarning.Text = resources.GetString("lblWarning.Text");
 			// 
 			// picLogo
 			// 
@@ -334,24 +326,32 @@ namespace Fryz.Apps.SpaceTrader
 			this.picLogo.TabIndex = 22;
 			this.picLogo.TabStop = false;
 			// 
+			// lblWelcome
+			// 
+			this.lblWelcome.Location = new System.Drawing.Point(92, 12);
+			this.lblWelcome.Name = "lblWelcome";
+			this.lblWelcome.Size = new System.Drawing.Size(176, 52);
+			this.lblWelcome.TabIndex = 3;
+			this.lblWelcome.Text = "Welcome to Sorosuub Engineering Shipyards! Our best engineer, Obi-Wan, is at your" +
+					" service.";
+			// 
 			// boxInfo
 			// 
-			this.boxInfo.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																					this.btnSave,
-																																					this.btnLoad,
-																																					this.picInfoLine,
-																																					this.btnPrevImage,
-																																					this.btnNextImage,
-																																					this.lblImage,
-																																					this.lblImageLabel,
-																																					this.selTemplate,
-																																					this.lblTemplate,
-																																					this.selSize,
-																																					this.lblSize,
-																																					this.btnSetCustomImage,
-																																					this.picShip,
-																																					this.txtName,
-																																					this.lblName});
+			this.boxInfo.Controls.Add(this.btnSave);
+			this.boxInfo.Controls.Add(this.btnLoad);
+			this.boxInfo.Controls.Add(this.picInfoLine);
+			this.boxInfo.Controls.Add(this.btnPrevImage);
+			this.boxInfo.Controls.Add(this.btnNextImage);
+			this.boxInfo.Controls.Add(this.lblImage);
+			this.boxInfo.Controls.Add(this.lblImageLabel);
+			this.boxInfo.Controls.Add(this.selTemplate);
+			this.boxInfo.Controls.Add(this.lblTemplate);
+			this.boxInfo.Controls.Add(this.selSize);
+			this.boxInfo.Controls.Add(this.lblSize);
+			this.boxInfo.Controls.Add(this.btnSetCustomImage);
+			this.boxInfo.Controls.Add(this.picShip);
+			this.boxInfo.Controls.Add(this.txtName);
+			this.boxInfo.Controls.Add(this.lblName);
 			this.boxInfo.Location = new System.Drawing.Point(8, 208);
 			this.boxInfo.Name = "boxInfo";
 			this.boxInfo.Size = new System.Drawing.Size(270, 160);
@@ -367,9 +367,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnSave.Size = new System.Drawing.Size(44, 20);
 			this.btnSave.TabIndex = 4;
 			this.btnSave.Text = "Save";
+			this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			this.btnSave.MouseEnter += new System.EventHandler(this.btnSave_MouseEnter);
-			this.btnSave.MouseLeave += new System.EventHandler(this.btnSave_MouseLeave);
 			// 
 			// btnLoad
 			// 
@@ -441,7 +441,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblTemplate.AutoSize = true;
 			this.lblTemplate.Location = new System.Drawing.Point(8, 19);
 			this.lblTemplate.Name = "lblTemplate";
-			this.lblTemplate.Size = new System.Drawing.Size(55, 13);
+			this.lblTemplate.Size = new System.Drawing.Size(54, 13);
 			this.lblTemplate.TabIndex = 20;
 			this.lblTemplate.Text = "Template:";
 			// 
@@ -459,7 +459,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblSize.AutoSize = true;
 			this.lblSize.Location = new System.Drawing.Point(8, 66);
 			this.lblSize.Name = "lblSize";
-			this.lblSize.Size = new System.Drawing.Size(29, 13);
+			this.lblSize.Size = new System.Drawing.Size(30, 13);
 			this.lblSize.TabIndex = 18;
 			this.lblSize.Text = "Size:";
 			// 
@@ -489,7 +489,6 @@ namespace Fryz.Apps.SpaceTrader
 			this.txtName.Name = "txtName";
 			this.txtName.Size = new System.Drawing.Size(132, 20);
 			this.txtName.TabIndex = 3;
-			this.txtName.Text = "";
 			this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
 			// 
 			// lblName
@@ -497,7 +496,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblName.AutoSize = true;
 			this.lblName.Location = new System.Drawing.Point(8, 44);
 			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(63, 13);
+			this.lblName.Size = new System.Drawing.Size(62, 13);
 			this.lblName.TabIndex = 5;
 			this.lblName.Text = "Ship Name:";
 			// 
@@ -515,24 +514,23 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblUnitsUsedLabel.AutoSize = true;
 			this.lblUnitsUsedLabel.Location = new System.Drawing.Point(8, 186);
 			this.lblUnitsUsedLabel.Name = "lblUnitsUsedLabel";
-			this.lblUnitsUsedLabel.Size = new System.Drawing.Size(63, 13);
+			this.lblUnitsUsedLabel.Size = new System.Drawing.Size(62, 13);
 			this.lblUnitsUsedLabel.TabIndex = 16;
 			this.lblUnitsUsedLabel.Text = "Units Used:";
 			// 
 			// boxCosts
 			// 
-			this.boxCosts.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																					 this.lblTradeIn,
-																																					 this.lblTradeInLabel,
-																																					 this.picCostsLine,
-																																					 this.lblPenalty,
-																																					 this.lblPenaltyLabel,
-																																					 this.lblShipCost,
-																																					 this.lblTotalCost,
-																																					 this.lblTotalCostLabel,
-																																					 this.lblShipCostLabel,
-																																					 this.lblDesignFee,
-																																					 this.lblDesignFeeLabel});
+			this.boxCosts.Controls.Add(this.lblTradeIn);
+			this.boxCosts.Controls.Add(this.lblTradeInLabel);
+			this.boxCosts.Controls.Add(this.picCostsLine);
+			this.boxCosts.Controls.Add(this.lblPenalty);
+			this.boxCosts.Controls.Add(this.lblPenaltyLabel);
+			this.boxCosts.Controls.Add(this.lblShipCost);
+			this.boxCosts.Controls.Add(this.lblTotalCost);
+			this.boxCosts.Controls.Add(this.lblTotalCostLabel);
+			this.boxCosts.Controls.Add(this.lblShipCostLabel);
+			this.boxCosts.Controls.Add(this.lblDesignFee);
+			this.boxCosts.Controls.Add(this.lblDesignFeeLabel);
 			this.boxCosts.Location = new System.Drawing.Point(286, 230);
 			this.boxCosts.Name = "boxCosts";
 			this.boxCosts.Size = new System.Drawing.Size(184, 106);
@@ -554,7 +552,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblTradeInLabel.AutoSize = true;
 			this.lblTradeInLabel.Location = new System.Drawing.Point(8, 64);
 			this.lblTradeInLabel.Name = "lblTradeInLabel";
-			this.lblTradeInLabel.Size = new System.Drawing.Size(77, 13);
+			this.lblTradeInLabel.Size = new System.Drawing.Size(75, 13);
 			this.lblTradeInLabel.TabIndex = 134;
 			this.lblTradeInLabel.Text = "Less Trade-In:";
 			// 
@@ -581,7 +579,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblPenaltyLabel.AutoSize = true;
 			this.lblPenaltyLabel.Location = new System.Drawing.Point(8, 32);
 			this.lblPenaltyLabel.Name = "lblPenaltyLabel";
-			this.lblPenaltyLabel.Size = new System.Drawing.Size(96, 13);
+			this.lblPenaltyLabel.Size = new System.Drawing.Size(92, 13);
 			this.lblPenaltyLabel.TabIndex = 20;
 			this.lblPenaltyLabel.Text = "Crowding Penalty:";
 			// 
@@ -608,7 +606,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblTotalCostLabel.AutoSize = true;
 			this.lblTotalCostLabel.Location = new System.Drawing.Point(8, 84);
 			this.lblTotalCostLabel.Name = "lblTotalCostLabel";
-			this.lblTotalCostLabel.Size = new System.Drawing.Size(59, 13);
+			this.lblTotalCostLabel.Size = new System.Drawing.Size(58, 13);
 			this.lblTotalCostLabel.TabIndex = 17;
 			this.lblTotalCostLabel.Text = "Total Cost:";
 			// 
@@ -617,7 +615,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblShipCostLabel.AutoSize = true;
 			this.lblShipCostLabel.Location = new System.Drawing.Point(8, 16);
 			this.lblShipCostLabel.Name = "lblShipCostLabel";
-			this.lblShipCostLabel.Size = new System.Drawing.Size(56, 13);
+			this.lblShipCostLabel.Size = new System.Drawing.Size(55, 13);
 			this.lblShipCostLabel.TabIndex = 16;
 			this.lblShipCostLabel.Text = "Ship Cost:";
 			// 
@@ -635,7 +633,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblDesignFeeLabel.AutoSize = true;
 			this.lblDesignFeeLabel.Location = new System.Drawing.Point(8, 48);
 			this.lblDesignFeeLabel.Name = "lblDesignFeeLabel";
-			this.lblDesignFeeLabel.Size = new System.Drawing.Size(65, 13);
+			this.lblDesignFeeLabel.Size = new System.Drawing.Size(64, 13);
 			this.lblDesignFeeLabel.TabIndex = 14;
 			this.lblDesignFeeLabel.Text = "Design Fee:";
 			// 
@@ -648,9 +646,9 @@ namespace Fryz.Apps.SpaceTrader
 			this.btnConstruct.Size = new System.Drawing.Size(88, 22);
 			this.btnConstruct.TabIndex = 6;
 			this.btnConstruct.Text = "Construct Ship";
+			this.btnConstruct.MouseLeave += new System.EventHandler(this.btnConstruct_MouseLeave);
 			this.btnConstruct.Click += new System.EventHandler(this.btnConstruct_Click);
 			this.btnConstruct.MouseEnter += new System.EventHandler(this.btnConstruct_MouseEnter);
-			this.btnConstruct.MouseLeave += new System.EventHandler(this.btnConstruct_MouseLeave);
 			// 
 			// btnCancel
 			// 
@@ -664,25 +662,24 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// boxAllocation
 			// 
-			this.boxAllocation.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																								this.lblPct,
-																																								this.lblPctLabel,
-																																								this.numHullStrength,
-																																								this.lblHullStrenghLabel,
-																																								this.numCargoBays,
-																																								this.numCrewQuarters,
-																																								this.numFuelTanks,
-																																								this.numShieldSlots,
-																																								this.numGadgetSlots,
-																																								this.numWeaponSlots,
-																																								this.lblCargoBays,
-																																								this.lblFuelTanks,
-																																								this.lblCrewQuarters,
-																																								this.lblShieldSlots,
-																																								this.lblGadgetSlots,
-																																								this.lblWeaponsSlots,
-																																								this.lblUnitsUsedLabel,
-																																								this.lblUnitsUsed});
+			this.boxAllocation.Controls.Add(this.lblPct);
+			this.boxAllocation.Controls.Add(this.lblPctLabel);
+			this.boxAllocation.Controls.Add(this.numHullStrength);
+			this.boxAllocation.Controls.Add(this.lblHullStrenghLabel);
+			this.boxAllocation.Controls.Add(this.numCargoBays);
+			this.boxAllocation.Controls.Add(this.numCrewQuarters);
+			this.boxAllocation.Controls.Add(this.numFuelTanks);
+			this.boxAllocation.Controls.Add(this.numShieldSlots);
+			this.boxAllocation.Controls.Add(this.numGadgetSlots);
+			this.boxAllocation.Controls.Add(this.numWeaponSlots);
+			this.boxAllocation.Controls.Add(this.lblCargoBays);
+			this.boxAllocation.Controls.Add(this.lblFuelTanks);
+			this.boxAllocation.Controls.Add(this.lblCrewQuarters);
+			this.boxAllocation.Controls.Add(this.lblShieldSlots);
+			this.boxAllocation.Controls.Add(this.lblGadgetSlots);
+			this.boxAllocation.Controls.Add(this.lblWeaponsSlots);
+			this.boxAllocation.Controls.Add(this.lblUnitsUsedLabel);
+			this.boxAllocation.Controls.Add(this.lblUnitsUsed);
 			this.boxAllocation.Location = new System.Drawing.Point(286, 0);
 			this.boxAllocation.Name = "boxAllocation";
 			this.boxAllocation.Size = new System.Drawing.Size(184, 226);
@@ -692,7 +689,7 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblPct
 			// 
-			this.lblPct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblPct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblPct.ForeColor = System.Drawing.Color.Red;
 			this.lblPct.Location = new System.Drawing.Point(110, 204);
 			this.lblPct.Name = "lblPct";
@@ -706,7 +703,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblPctLabel.AutoSize = true;
 			this.lblPctLabel.Location = new System.Drawing.Point(8, 204);
 			this.lblPctLabel.Name = "lblPctLabel";
-			this.lblPctLabel.Size = new System.Drawing.Size(54, 13);
+			this.lblPctLabel.Size = new System.Drawing.Size(53, 13);
 			this.lblPctLabel.TabIndex = 18;
 			this.lblPctLabel.Text = "% of Max:";
 			// 
@@ -714,25 +711,25 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			this.numHullStrength.BackColor = System.Drawing.Color.White;
 			this.numHullStrength.Location = new System.Drawing.Point(110, 64);
-			this.numHullStrength.Maximum = new System.Decimal(new int[] {
-																																		9999,
-																																		0,
-																																		0,
-																																		0});
+			this.numHullStrength.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
 			this.numHullStrength.Name = "numHullStrength";
 			this.numHullStrength.ReadOnly = true;
 			this.numHullStrength.Size = new System.Drawing.Size(64, 20);
 			this.numHullStrength.TabIndex = 1;
 			this.numHullStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numHullStrength.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numHullStrength.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numHullStrength.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// lblHullStrenghLabel
 			// 
 			this.lblHullStrenghLabel.AutoSize = true;
 			this.lblHullStrenghLabel.Location = new System.Drawing.Point(8, 66);
 			this.lblHullStrenghLabel.Name = "lblHullStrenghLabel";
-			this.lblHullStrenghLabel.Size = new System.Drawing.Size(70, 13);
+			this.lblHullStrenghLabel.Size = new System.Drawing.Size(68, 13);
 			this.lblHullStrenghLabel.TabIndex = 13;
 			this.lblHullStrenghLabel.Text = "Hull Strengh:";
 			// 
@@ -740,40 +737,40 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			this.numCargoBays.BackColor = System.Drawing.Color.White;
 			this.numCargoBays.Location = new System.Drawing.Point(110, 16);
-			this.numCargoBays.Maximum = new System.Decimal(new int[] {
-																																 999,
-																																 0,
-																																 0,
-																																 0});
+			this.numCargoBays.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
 			this.numCargoBays.Name = "numCargoBays";
 			this.numCargoBays.ReadOnly = true;
 			this.numCargoBays.Size = new System.Drawing.Size(64, 20);
 			this.numCargoBays.TabIndex = 3;
 			this.numCargoBays.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numCargoBays.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numCargoBays.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numCargoBays.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// numCrewQuarters
 			// 
 			this.numCrewQuarters.BackColor = System.Drawing.Color.White;
 			this.numCrewQuarters.Location = new System.Drawing.Point(110, 160);
-			this.numCrewQuarters.Minimum = new System.Decimal(new int[] {
-																																		1,
-																																		0,
-																																		0,
-																																		0});
+			this.numCrewQuarters.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numCrewQuarters.Name = "numCrewQuarters";
 			this.numCrewQuarters.ReadOnly = true;
 			this.numCrewQuarters.Size = new System.Drawing.Size(64, 20);
 			this.numCrewQuarters.TabIndex = 4;
 			this.numCrewQuarters.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numCrewQuarters.Value = new System.Decimal(new int[] {
-																																	1,
-																																	0,
-																																	0,
-																																	0});
-			this.numCrewQuarters.Enter += new System.EventHandler(this.num_ValueEnter);
+			this.numCrewQuarters.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numCrewQuarters.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numCrewQuarters.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// numFuelTanks
 			// 
@@ -784,8 +781,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.numFuelTanks.Size = new System.Drawing.Size(64, 20);
 			this.numFuelTanks.TabIndex = 2;
 			this.numFuelTanks.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numFuelTanks.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numFuelTanks.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numFuelTanks.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// numShieldSlots
 			// 
@@ -796,8 +793,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.numShieldSlots.Size = new System.Drawing.Size(64, 20);
 			this.numShieldSlots.TabIndex = 6;
 			this.numShieldSlots.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numShieldSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numShieldSlots.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numShieldSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// numGadgetSlots
 			// 
@@ -808,8 +805,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.numGadgetSlots.Size = new System.Drawing.Size(64, 20);
 			this.numGadgetSlots.TabIndex = 7;
 			this.numGadgetSlots.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numGadgetSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numGadgetSlots.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numGadgetSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// numWeaponSlots
 			// 
@@ -820,15 +817,15 @@ namespace Fryz.Apps.SpaceTrader
 			this.numWeaponSlots.Size = new System.Drawing.Size(64, 20);
 			this.numWeaponSlots.TabIndex = 5;
 			this.numWeaponSlots.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.numWeaponSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			this.numWeaponSlots.ValueChanged += new System.EventHandler(this.num_ValueChanged);
+			this.numWeaponSlots.Enter += new System.EventHandler(this.num_ValueEnter);
 			// 
 			// lblCargoBays
 			// 
 			this.lblCargoBays.AutoSize = true;
 			this.lblCargoBays.Location = new System.Drawing.Point(8, 18);
 			this.lblCargoBays.Name = "lblCargoBays";
-			this.lblCargoBays.Size = new System.Drawing.Size(66, 13);
+			this.lblCargoBays.Size = new System.Drawing.Size(64, 13);
 			this.lblCargoBays.TabIndex = 5;
 			this.lblCargoBays.Text = "Cargo Bays:";
 			// 
@@ -837,7 +834,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblFuelTanks.AutoSize = true;
 			this.lblFuelTanks.Location = new System.Drawing.Point(8, 42);
 			this.lblFuelTanks.Name = "lblFuelTanks";
-			this.lblFuelTanks.Size = new System.Drawing.Size(41, 13);
+			this.lblFuelTanks.Size = new System.Drawing.Size(42, 13);
 			this.lblFuelTanks.TabIndex = 4;
 			this.lblFuelTanks.Text = "Range:";
 			// 
@@ -846,7 +843,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblCrewQuarters.AutoSize = true;
 			this.lblCrewQuarters.Location = new System.Drawing.Point(8, 162);
 			this.lblCrewQuarters.Name = "lblCrewQuarters";
-			this.lblCrewQuarters.Size = new System.Drawing.Size(81, 13);
+			this.lblCrewQuarters.Size = new System.Drawing.Size(77, 13);
 			this.lblCrewQuarters.TabIndex = 3;
 			this.lblCrewQuarters.Text = "Crew Quarters:";
 			// 
@@ -855,7 +852,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblShieldSlots.AutoSize = true;
 			this.lblShieldSlots.Location = new System.Drawing.Point(8, 114);
 			this.lblShieldSlots.Name = "lblShieldSlots";
-			this.lblShieldSlots.Size = new System.Drawing.Size(67, 13);
+			this.lblShieldSlots.Size = new System.Drawing.Size(65, 13);
 			this.lblShieldSlots.TabIndex = 2;
 			this.lblShieldSlots.Text = "Shield Slots:";
 			// 
@@ -864,7 +861,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblGadgetSlots.AutoSize = true;
 			this.lblGadgetSlots.Location = new System.Drawing.Point(8, 138);
 			this.lblGadgetSlots.Name = "lblGadgetSlots";
-			this.lblGadgetSlots.Size = new System.Drawing.Size(73, 13);
+			this.lblGadgetSlots.Size = new System.Drawing.Size(71, 13);
 			this.lblGadgetSlots.TabIndex = 1;
 			this.lblGadgetSlots.Text = "Gadget Slots:";
 			// 
@@ -873,16 +870,19 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblWeaponsSlots.AutoSize = true;
 			this.lblWeaponsSlots.Location = new System.Drawing.Point(8, 90);
 			this.lblWeaponsSlots.Name = "lblWeaponsSlots";
-			this.lblWeaponsSlots.Size = new System.Drawing.Size(78, 13);
+			this.lblWeaponsSlots.Size = new System.Drawing.Size(77, 13);
 			this.lblWeaponsSlots.TabIndex = 0;
 			this.lblWeaponsSlots.Text = "Weapon Slots:";
 			// 
 			// ilShipyardLogos
 			// 
-			this.ilShipyardLogos.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-			this.ilShipyardLogos.ImageSize = new System.Drawing.Size(80, 80);
 			this.ilShipyardLogos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilShipyardLogos.ImageStream")));
 			this.ilShipyardLogos.TransparentColor = System.Drawing.Color.Black;
+			this.ilShipyardLogos.Images.SetKeyName(0, "");
+			this.ilShipyardLogos.Images.SetKeyName(1, "");
+			this.ilShipyardLogos.Images.SetKeyName(2, "");
+			this.ilShipyardLogos.Images.SetKeyName(3, "");
+			this.ilShipyardLogos.Images.SetKeyName(4, "");
 			// 
 			// dlgOpen
 			// 
@@ -927,16 +927,15 @@ namespace Fryz.Apps.SpaceTrader
 			this.AcceptButton = this.btnConstruct;
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnCancel;
-			this.ClientSize = new System.Drawing.Size(478, 375);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																																	this.lblDisabledPct,
-																																	this.boxWelcome,
-																																	this.lblDisabledName,
-																																	this.boxAllocation,
-																																	this.boxCosts,
-																																	this.boxInfo,
-																																	this.btnCancel,
-																																	this.btnConstruct});
+			this.ClientSize = new System.Drawing.Size(478, 389);
+			this.Controls.Add(this.lblDisabledPct);
+			this.Controls.Add(this.boxWelcome);
+			this.Controls.Add(this.lblDisabledName);
+			this.Controls.Add(this.boxAllocation);
+			this.Controls.Add(this.boxCosts);
+			this.Controls.Add(this.boxInfo);
+			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnConstruct);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
@@ -945,9 +944,17 @@ namespace Fryz.Apps.SpaceTrader
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Ship Design at XXXX Shipyards";
 			this.boxWelcome.ResumeLayout(false);
+			this.boxWelcome.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
 			this.boxInfo.ResumeLayout(false);
+			this.boxInfo.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picInfoLine)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picShip)).EndInit();
 			this.boxCosts.ResumeLayout(false);
+			this.boxCosts.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picCostsLine)).EndInit();
 			this.boxAllocation.ResumeLayout(false);
+			this.boxAllocation.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numHullStrength)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numCargoBays)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numCrewQuarters)).EndInit();

@@ -90,8 +90,10 @@ namespace Fryz.Apps.SpaceTrader
 		{
 			this.btnClose = new System.Windows.Forms.Button();
 			this.boxCurrentCrew = new System.Windows.Forms.GroupBox();
+			this.lblCrewNoQuarters = new System.Windows.Forms.Label();
 			this.lstCrew = new System.Windows.Forms.ListBox();
 			this.boxForHire = new System.Windows.Forms.GroupBox();
+			this.lblForHireNone = new System.Windows.Forms.Label();
 			this.lstForHire = new System.Windows.Forms.ListBox();
 			this.boxInfo = new System.Windows.Forms.GroupBox();
 			this.btnHireFire = new System.Windows.Forms.Button();
@@ -105,8 +107,6 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblTraderLabel = new System.Windows.Forms.Label();
 			this.lblFighterLabel = new System.Windows.Forms.Label();
 			this.lblPilotLabel = new System.Windows.Forms.Label();
-			this.lblCrewNoQuarters = new System.Windows.Forms.Label();
-			this.lblForHireNone = new System.Windows.Forms.Label();
 			this.boxCurrentCrew.SuspendLayout();
 			this.boxForHire.SuspendLayout();
 			this.boxInfo.SuspendLayout();
@@ -133,6 +133,15 @@ namespace Fryz.Apps.SpaceTrader
 			this.boxCurrentCrew.TabStop = false;
 			this.boxCurrentCrew.Text = "Current Crew";
 			// 
+			// lblCrewNoQuarters
+			// 
+			this.lblCrewNoQuarters.Location = new System.Drawing.Point(16, 24);
+			this.lblCrewNoQuarters.Name = "lblCrewNoQuarters";
+			this.lblCrewNoQuarters.Size = new System.Drawing.Size(120, 16);
+			this.lblCrewNoQuarters.TabIndex = 7;
+			this.lblCrewNoQuarters.Text = "No quarters available";
+			this.lblCrewNoQuarters.Visible = false;
+			// 
 			// lstCrew
 			// 
 			this.lstCrew.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -140,8 +149,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.lstCrew.Name = "lstCrew";
 			this.lstCrew.Size = new System.Drawing.Size(126, 80);
 			this.lstCrew.TabIndex = 6;
-			this.lstCrew.DoubleClick += new System.EventHandler(this.HireFire);
 			this.lstCrew.SelectedIndexChanged += new System.EventHandler(this.SelectedIndexChanged);
+			this.lstCrew.DoubleClick += new System.EventHandler(this.HireFire);
 			// 
 			// boxForHire
 			// 
@@ -154,6 +163,15 @@ namespace Fryz.Apps.SpaceTrader
 			this.boxForHire.TabStop = false;
 			this.boxForHire.Text = "Mercenaries For Hire";
 			// 
+			// lblForHireNone
+			// 
+			this.lblForHireNone.Location = new System.Drawing.Point(16, 24);
+			this.lblForHireNone.Name = "lblForHireNone";
+			this.lblForHireNone.Size = new System.Drawing.Size(120, 16);
+			this.lblForHireNone.TabIndex = 8;
+			this.lblForHireNone.Text = "No one for hire";
+			this.lblForHireNone.Visible = false;
+			// 
 			// lstForHire
 			// 
 			this.lstForHire.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -161,8 +179,8 @@ namespace Fryz.Apps.SpaceTrader
 			this.lstForHire.Name = "lstForHire";
 			this.lstForHire.Size = new System.Drawing.Size(126, 80);
 			this.lstForHire.TabIndex = 5;
-			this.lstForHire.DoubleClick += new System.EventHandler(this.HireFire);
 			this.lstForHire.SelectedIndexChanged += new System.EventHandler(this.SelectedIndexChanged);
+			this.lstForHire.DoubleClick += new System.EventHandler(this.HireFire);
 			// 
 			// boxInfo
 			// 
@@ -204,7 +222,7 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// lblName
 			// 
-			this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
+			this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblName.Location = new System.Drawing.Point(12, 18);
 			this.lblName.Name = "lblName";
 			this.lblName.Size = new System.Drawing.Size(72, 13);
@@ -248,7 +266,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblEngineerLabel.AutoSize = true;
 			this.lblEngineerLabel.Location = new System.Drawing.Point(12, 88);
 			this.lblEngineerLabel.Name = "lblEngineerLabel";
-			this.lblEngineerLabel.Size = new System.Drawing.Size(53, 16);
+			this.lblEngineerLabel.Size = new System.Drawing.Size(52, 13);
 			this.lblEngineerLabel.TabIndex = 91;
 			this.lblEngineerLabel.Text = "Engineer:";
 			// 
@@ -257,7 +275,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblTraderLabel.AutoSize = true;
 			this.lblTraderLabel.Location = new System.Drawing.Point(12, 72);
 			this.lblTraderLabel.Name = "lblTraderLabel";
-			this.lblTraderLabel.Size = new System.Drawing.Size(41, 16);
+			this.lblTraderLabel.Size = new System.Drawing.Size(41, 13);
 			this.lblTraderLabel.TabIndex = 90;
 			this.lblTraderLabel.Text = "Trader:";
 			// 
@@ -266,7 +284,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblFighterLabel.AutoSize = true;
 			this.lblFighterLabel.Location = new System.Drawing.Point(12, 56);
 			this.lblFighterLabel.Name = "lblFighterLabel";
-			this.lblFighterLabel.Size = new System.Drawing.Size(43, 16);
+			this.lblFighterLabel.Size = new System.Drawing.Size(42, 13);
 			this.lblFighterLabel.TabIndex = 89;
 			this.lblFighterLabel.Text = "Fighter:";
 			// 
@@ -275,33 +293,15 @@ namespace Fryz.Apps.SpaceTrader
 			this.lblPilotLabel.AutoSize = true;
 			this.lblPilotLabel.Location = new System.Drawing.Point(12, 40);
 			this.lblPilotLabel.Name = "lblPilotLabel";
-			this.lblPilotLabel.Size = new System.Drawing.Size(29, 16);
+			this.lblPilotLabel.Size = new System.Drawing.Size(30, 13);
 			this.lblPilotLabel.TabIndex = 88;
 			this.lblPilotLabel.Text = "Pilot:";
-			// 
-			// lblCrewNoQuarters
-			// 
-			this.lblCrewNoQuarters.Location = new System.Drawing.Point(16, 24);
-			this.lblCrewNoQuarters.Name = "lblCrewNoQuarters";
-			this.lblCrewNoQuarters.Size = new System.Drawing.Size(120, 16);
-			this.lblCrewNoQuarters.TabIndex = 7;
-			this.lblCrewNoQuarters.Text = "No quarters available";
-			this.lblCrewNoQuarters.Visible = false;
-			// 
-			// lblForHireNone
-			// 
-			this.lblForHireNone.Location = new System.Drawing.Point(16, 24);
-			this.lblForHireNone.Name = "lblForHireNone";
-			this.lblForHireNone.Size = new System.Drawing.Size(120, 16);
-			this.lblForHireNone.TabIndex = 8;
-			this.lblForHireNone.Text = "No one for hire";
-			this.lblForHireNone.Visible = false;
 			// 
 			// FormViewPersonnel
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
 			this.CancelButton = this.btnClose;
-			this.ClientSize = new System.Drawing.Size(488, 129);
+			this.ClientSize = new System.Drawing.Size(488, 138);
 			this.Controls.Add(this.boxInfo);
 			this.Controls.Add(this.boxForHire);
 			this.Controls.Add(this.boxCurrentCrew);
@@ -316,6 +316,7 @@ namespace Fryz.Apps.SpaceTrader
 			this.boxCurrentCrew.ResumeLayout(false);
 			this.boxForHire.ResumeLayout(false);
 			this.boxInfo.ResumeLayout(false);
+			this.boxInfo.PerformLayout();
 			this.ResumeLayout(false);
 
 		}

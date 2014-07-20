@@ -171,7 +171,7 @@ namespace Fryz.Apps.SpaceTrader
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(FormAlert));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlert));
 			this.lblText = new System.Windows.Forms.Label();
 			this.btn1 = new System.Windows.Forms.Button();
 			this.btn2 = new System.Windows.Forms.Button();
@@ -210,10 +210,13 @@ namespace Fryz.Apps.SpaceTrader
 			// 
 			// ilImages
 			// 
-			this.ilImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-			this.ilImages.ImageSize = new System.Drawing.Size(160, 160);
 			this.ilImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilImages.ImageStream")));
 			this.ilImages.TransparentColor = System.Drawing.Color.Empty;
+			this.ilImages.Images.SetKeyName(0, "");
+			this.ilImages.Images.SetKeyName(1, "");
+			this.ilImages.Images.SetKeyName(2, "");
+			this.ilImages.Images.SetKeyName(3, "");
+			this.ilImages.Images.SetKeyName(4, "");
 			// 
 			// tmrTick
 			// 
@@ -223,7 +226,7 @@ namespace Fryz.Apps.SpaceTrader
 			// FormAlert
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(270, 63);
+			this.ClientSize = new System.Drawing.Size(270, 77);
 			this.ControlBox = false;
 			this.Controls.Add(this.btn2);
 			this.Controls.Add(this.btn1);
